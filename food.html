@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<style>
+
+body {
+  font-family: Arial;
+  background-image: url("almonds-berries-blackberries-1099680.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: #fef2da;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #800000;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: fantasy;
+}
+
+.tab button:hover {
+    background-color: #ffd5d5;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #8c6767;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #d3c6c1;
+    margin-bottom: 1%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+}
+
+.topnav a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.topnav a:hover {
+    text-decoration: line-through;
+}
+
+.topnav a.active {
+    color: white;
+}
+</style>
+<title>MYTour-Food</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="topnav">
+      <a href="faq.html#faq">F.A.Q</a>
+      <a href="moment.html#moment">Moment</a>
+      <a href="article.html#article">Article</a>
+      <a href="itinerary.html#itinerary">Itinerary</a>
+      <a href="hotel.html#hotel">Hotel</a>
+      <a class="active" href="food.html#food">Food</a>
+      <a href="destination.html#destination">Destination</a>
+      <a href="index.html#home">Home</a>
+      </div>
+
+<h2>You should try!</h2>
+<p>Click on the tab to see the yummies menu.</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Johor')">Johor</button>
+  <button class="tablinks" onclick="openCity(event, 'Kedah')">Kedah</button>
+  <button class="tablinks" onclick="openCity(event, 'Melaka')">Melaka</button>
+  <button class="tablinks" onclick="openCity(event, 'Sabah')">Sabah</button>
+  <button class="tablinks" onclick="openCity(event, 'Perak')">Perak</button>
+  <button class="tablinks" onclick="openCity(event, 'Selangor')">Selangor</button>
+  <button class="tablinks" onclick="openCity(event, 'Terengganu')">Terengganu</button>
+  <button class="tablinks" onclick="openCity(event, 'Pahang')">Pahang</button>
+</div>
+
+<div id="Johor" class="tabcontent">
+  <h3>Johor</h3>
+  <img src="copilot-food-travel-201405-1401310538219_best-food-instagrams-_0001_9.jpg">
+</div>
+
+<div id="Kedah" class="tabcontent">
+  <h3>Kedah</h3>
+  <img src="Laksa-Kedah.jpg">
+</div>
+
+<div id="Melaka" class="tabcontent">
+  <h3>Melaka</h3>
+  <img src="chicken-rice-ball.jpg">
+</div>
+
+<div id="Sabah" class="tabcontent">
+  <h3>Sabah</h3>
+  <img src="cfed.jpg">
+</div>
+
+<div id="Perak" class="tabcontent">
+  <h3>Perak</h3>
+  <img src="12WanThauLong_gregw3602z_flickr.jpg">
+</div>
+
+<div id="Selangor" class="tabcontent">
+  <h3>Selangor</h3>
+  <img src="roti_canai_IMG_9574.jpg">
+</div>
+
+<div id="Terengganu" class="tabcontent">
+  <h3>Terengganu</h3>
+  <img src="lekor.jpg">
+</div>
+
+<div id="Pahang" class="tabcontent">
+  <h3>Pahang</h3>
+  <img src="cb3f.jpg">
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>
