@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hotel Review</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/eggplant/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+      $( function() {
+      $( "#tabs" ).tabs();
+      } );
+
+      $( function() {
+      $( "#tabs1" ).tabs();
+      } );
+
+      $( function() {
+      $( "#tabs2" ).tabs();
+      } );
+
+      $( function() {
+      $( "#tabs3" ).tabs();
+      } );
+
+      $( function() {
+      $( "#tabs4" ).tabs();
+      } );
+</script>
+
+<style type="text/css">
+body{
+  margin: 0 auto;
+        min-width: 1000px;
+        max-width: 1400px;
+        font-family: Arial;
+        padding: 20px;
+        background: #fef2da;
+        width: 500px;
+}
+
+h1{
+  font-weight: bold;
+  font-family: fantasy;
+  text-align: center;
+  font-size: 50px;
+}
+
+* {
+    box-sizing: border-box;
+}
+.ui-tabs .ui-tabs-hide {
+display: none;
+}
+.tabs{
+padding:20px;
+}
+
+#tabs .ui-tabs-nav,
+#tabs1 .ui-tabs-nav, #tabs2 .ui-tabs-nav, #tabs3 .ui-tabs-nav, #tabs4 .ui-tabs-nav {
+margin: 0;
+padding: 0 0 0 0.5em;
+overflow: hidden;
+}
+
+#tabs .ui-tabs-nav li, #tabs1 .ui-tabs-nav li, #tabs2 .ui-tabs-nav li, #tabs3 .ui-tabs-nav li, #tabs4 .ui-tabs-nav li {
+float: left;
+list-style-type: none;
+background: black;
+margin: 0 0.5em 0 0;
+padding: 0.25em 1em;
+color:black;
+}
+
+#tabs .ui-tabs-nav li.ui-tabs-selected, #tabs1 .ui-tabs-nav li.ui-tabs-selected, #tabs2 .ui-tabs-nav li.ui-tabs-selected,#tabs3 .ui-tabs-nav li.ui-tabs-selected, #tabs4 .ui-tabs-nav li.ui-tabs-selected {
+background: black;
+}
+li{
+color:black;
+}
+#tabs .ui-tabs-nav a, #tabs1 .ui-tabs-nav a, #tabs2 .ui-tabs-nav a, #tabs3 .ui-tabs-nav a, #tabs4 .ui-tabs-nav a {
+text-decoration: none;
+font-size: 0.7em;
+}
+
+#tabs .ui-tabs-panel, #tabs1 .ui-tabs-panel, #tabs2 .ui-tabs-panel, #tabs3 .ui-tabs-panel, #tabs4 .ui-tabs-panel {
+background: #e3e3e3;
+padding: 0.75em 1em;
+}
+
+p{
+color:black;
+}
+.checked {
+color: orange;
+}
+
+.unchecked{
+color:#ECF0F1;
+}
+.side {
+float: left;
+width: 10%;
+margin-top:2px;
+}
+
+.star {
+margin-top:2px;
+float: left;
+width: 15%;
+}
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.rank{
+float: left;
+width: 20%;
+margin-top:2px;
+
+}
+h2{
+font-family: arial;
+font-size: 20px;
+}
+
+.con img{
+width: 80%;
+height: 40%;
+padding-left: 120px;
+}
+
+.container{
+  position: relative;
+  text-align: center;
+
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #d3c6c1;
+    top: 0%;
+    width: 90%;
+    margin-bottom: 1%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+}
+
+.topnav a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.topnav a:hover {
+    text-decoration: line-through;
+}
+
+.topnav a.active {
+    color: white;
+}
+
+  </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="topnav">
+        <a href="faq.html#faq">F.A.Q</a>
+        <a href="moment.html#moment">Moment</a>
+        <a href="article.html#article">Article</a>
+        <a href="itinerary.html#itinerary">Itinerary</a>
+        <a class="active"href="hotel.html#hotel">Hotels</a>
+        <a href="destination.html#destination">Destination</a>
+        <a  href="index.html#home">Home</a>
+        </div>
+      </div>
+
+    <h1>Hotel Review</h1>
+
+    <p>When we have a vacation to Langkawi Island, finding budget accommodation and affordable hotels in Langkawi
+      especially around the beach is really easy but not all good. Everyone including myself want to stay at comfortable
+      place and is worth the price even cheap. And usually when traveling here we should look for a affordable hotel
+      near the Langkawi Airport.
+ </p>
+ <p>Besides comfort and price, another factor that we must consider is to find a cheap hotel location. You may not want
+   to stay in a cheap and comfortable hotel but also to the nearby attractions. Here is a list of affordable hotels in
+   Langkawi which have good facilities and good reviews and are in the vicinity of tourist attractions in Langkawi
+   such as the beach area of Cenang, Kuah Town and Langkawi Airport.</p>
+<br>
+ <h4>1.HIG Hotel</h4>
+
+<div class="con">
+  <img src="https://pix10.agoda.net/hotelImages/522854/-1/961175f5790fde6a772e4a5384578262.jpg?s=1024x768" alt="">
+</div>
+
+<br>
+
+    <div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Info</a></li>
+    <li><a href="#tabs-2">Address</a></li>
+    <li><a href="#tabs-3">Room</a></li>
+    <li><a href="#tabs-4">Facilities</a></li>
+      <li><a href="#tabs-5">Nearby Attractions</a></li>
+      <li><a href="#tabs-6">Review</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>Just a 5-minute drive from Kuah Town and the popular Dataran Lang sculpture, HIG Hotel provides modern a
+      ccommodation with a private restaurant. Rooms offer either sea or mountain views and includes free Wi-Fi access.
+This modern building is located within 30 minutes by car to Langkawi International Airport and Langkawi Underwater World.
+ The popular Cenang Beach is 25 minutes away by car. The hotel offers direct access to HIG Shopping Complex.
+Well-furnished rooms here will provide a seating area and mini-fridge. Air conditioning and a flat-screen TV are
+ included in all rooms. En suite bathrooms offer free bath amenities and bath towels.
+At HIG Hotel, you will find a 24-hour front desk. Other facilities offered include meeting facilities and luggage
+storage space. The property offers free parking on-site.
+Open daily from 07:00 - 22:00, Tokya Restaurant will serve local Malaysian delicacies including a breakfast
+buffet and individual selections from an a la carte menu. </p>
+  </div>
+  <div id="tabs-2">
+    <p>Lot 1852, Jalan Penarak, 07000 Kuah, Malaysia.</p>
+  </div>
+  <div id="tabs-3">
+  <ul>
+    <li>Standard Hill View
+</li>
+<li>Standard Sea View</li>
+<li>
+Junior Suite</li>
+<li>
+Hill View Suite
+</li>
+<li>Deluxe Sea View</li>
+<li>Superior Hill View</li>
+<li>Twin/Double room - Superior</li>
+<li>Double Deluxe Room</li>
+<li>SMOKING OR NONSMOKING ROOM WITH SEA VIEW
+</li>
+<li>Deluxe Suite</li>
+<li>DELUXE SUITE HILLVIEW</li>
+  </ul>
+  </div>
+  <div id="tabs-4">
+    <li>Air Conditioning </li>
+    <li>Parking</li>
+    <li>24-Hour Front Desk</li>
+    <li>Elevator</li>
+    <li>Restaurant</li>
+    <li>Wifi</li>
+  </div>
+  <div id="tabs-5">
+  <ul>
+    <li>Lagenda Park(1.49 km)
+ </li>
+ <li>Eagle Square(1.91 km)</li>
+ <li>
+ Kuah Jetty(2.11 km)</li>
+ <li>
+ Beringin Beach(3.54 km)
+ </li>
+  </ul>
+  </div>
+  <div id="tabs-6">
+    <p>"Helpful staff and good service. Keep up the good work. Good environment and also nice
+      food. It's so easy because the supermarket is connected to the hotel. Near to a lot of places
+      such as food court and the town.This place is located in Kuah district. They sell various of
+      chocolate with affordable price. In this mall attached together with hotel. Many shops nearby
+      the hotel. Got lot of parking. Recommended for family vacations because near to town and offer
+      a lot of variety of foods and also can shopping a lot of chocolate at there."</p>
+  </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <h6 class="comment-name by-author"><a href="https://www.agoda.com/hig-hotel/hotel/langkawi-my.html?cid=-218 "target="_blank">CHECK ROOM PRICE HERE</a></h6>
+
+<h2>Rating</h2>
+<div class="row">
+  <div class="side">
+    <div>Price</div>
+  </div>
+  <div class="star">
+
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+</div>
+<p>5/5</p>
+</div>
+
+<h2></h2>
+<div class="row">
+  <div class="side">
+    <div>Location</div>
+  </div>
+  <div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+</div>
+<p>5/5</p>
+</div>
+
+
+<h2></h2>
+<div class="row">
+  <div class="side">
+    <div>Facilities</div>
+  </div>
+  <div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star unchecked"></span>
+</div>
+<p>4/5</p>
+</div>
+
+<h2></h2>
+<div class="row">
+  <div class="side">
+    <div>Cleanliness</div>
+  </div>
+  <div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+</div>
+<p>4.5/5</p>
+</div>
+
+<h2></h2>
+<div class="row">
+  <div class="side">
+    <div>Service</div>
+  </div>
+  <div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star unchecked"></span>
+</div>
+<p>4/5</p>
+</div>
+<hr>
+  <h4>2.Langgura Baron Resort Langkawi</h4>
+  <div class="con">
+      <img src="https://i0.bookcdn.com/data/Photos/Big/2902/290259/290259752/Langgura-Baron-Resort-photos-Exterior.JPEG" alt="">
+  </div>
+
+
+
+<br>
+     <div id="tabs1">
+   <ul>
+     <li><a href="#tabs-1">Info</a></li>
+     <li><a href="#tabs-2">Address</a></li>
+     <li><a href="#tabs-3">Room</a></li>
+     <li><a href="#tabs-4">Facilities</a></li>
+      <li><a href="#tabs-5">Nearby Attractions</a></li>
+      <li><a href="#tabs-6">Review</a></li>
+   </ul>
+   <div id="tabs-1">
+     <p>
+This property ensures guests warm hospitality and great service that also brings along various activities and
+fun. All the timber chalets and brick rooms are fully equipped, featuring basic amenities to provide utmost
+comfort to guests. The property features an on-site open air restaurant with a wide range of eateries, a
+convenience shop, and a conference and meeting hall to facilitate the corporate travelers. Langgura Baron
+Resort is a perfect place for leisure and business travelers who wish to stay in a great location with affordable prices. </p>
+   </div>
+   <div id="tabs-2">
+     <p>Lot 2608, Tanjung Mali, Pantai Cenang, Pantai Cenang, Langkawi, Kedah, Malaysia, 07000.</p>
+   </div>
+   <div id="tabs-3">
+   <ul>
+       <li>Superior Twin Room
+       </li>
+       <li>Superior Room</li>
+       <li>
+       Super Deluxe</li>
+       <li>
+       Family Room
+       </li>
+   </ul>
+   </div>
+   <div id="tabs-4">
+  <ul>
+      <li>Air Conditioning</li>
+      <li>Parking</li>
+      <li>Swimming Pool</li>
+      <li>Elevator</li>
+      <li>Wifi</li>
+  </ul>
+   </div>
+   <div id="tabs-5">
+   <ul>
+     <li>Underwater World Langkawi(0.31 km)
+   </li>
+   <li>Cenang Beach(0.50 km)</li>
+   <li>
+   Laman Padi Langkawi(1.07 km)</li>
+   <li>
+   Tengah Beach(1.91 km)
+   </li>
+   </ul>
+   </div>
+   <div id="tabs-6">
+     <p>"Great location and overall good services. Right in front of Pantai Cenang beach and
+        next to 24-hour food stalls. A great seaview and the room is very clean. A small
+        swimming pool at the back area of the hotel but good enough for some relaxation.
+        The problem is wifi too slow but great price for low budget. Highly recommended."</p>
+   </div>
+ </div>
+
+
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <h6 class="comment-name by-author"><a href="https://www.agoda.com/langgura-baron-resort/hotel/langkawi-my.html?cid=-218 "target="_blank">CHECK ROOM PRICE HERE</a></h6>
+  <h2>Rating</h2>
+  <div class="row">
+    <div class="side">
+      <div>Price</div>
+    </div>
+    <div class="star">
+
+
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star unchecked"></span>
+  </div>
+  <p>4/5</p>
+  </div>
+
+  <h2></h2>
+  <div class="row">
+    <div class="side">
+      <div>Location</div>
+    </div>
+    <div class="star">
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star-half-o checked"></span>
+  </div>
+  <p>4.5/5</p>
+  </div>
+
+
+  <h2></h2>
+  <div class="row">
+    <div class="side">
+      <div>Facilities</div>
+    </div>
+    <div class="star">
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star unchecked"></span>
+  </div>
+  <p>4/5</p>
+  </div>
+
+  <h2></h2>
+  <div class="row">
+    <div class="side">
+      <div>Cleanliness</div>
+    </div>
+    <div class="star">
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star unchecked"></span>
+  </div>
+  <p>4/5</p>
+  </div>
+
+  <h2></h2>
+  <div class="row">
+    <div class="side">
+      <div>Service</div>
+    </div>
+    <div class="star">
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star unchecked"></span>
+  </div>
+  <p>4/5</p>
+  </div>
+<hr>
+  <h4>3.Hotel Langkasuka Langkawi</h4>
+<div class="con">
+  <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/72/be/12/night-view.jpg" alt="">
+</div>
+
+
+<br>
+
+     <div id="tabs2">
+   <ul>
+     <li><a href="#tabs-1">Info</a></li>
+     <li><a href="#tabs-2">Address</a></li>
+     <li><a href="#tabs-3">Room</a></li>
+     <li><a href="#tabs-4">Facilities</a></li>
+      <li><a href="#tabs-5">Nearby Attractions</a></li>
+      <li><a href="#tabs-6">Review</a></li>
+
+   </ul>
+   <div id="tabs-1">
+     <p>
+Centrally located in Kuah Town, this property offers effortless access to Langkawi Parade Shopping
+Complex which houses over 40 shopping venues and fine eatery and beverage outlets. Just around the corner,
+you'll find a variety of duty-free shops where you can pick up branded products for a great rate.
+Hotel Langkasuka offers a suitable location for both leisure and business travelers. All 168 rooms and
+suites are well fitted with modern furnishings and in-room amenities for utmost comfort.
+For business travelers, the 400 seating conference and meeting room will be quite useful.
+For a fun day out, transportation to and from the jetty is easy to find. You can even go for
+city tours and island hopping, for Langkawi has many beautiful natural surroundings that will impress you.
+Hotel Langkasuka is a good choice if you wish to stay in Kuah Town.</p>
+   </div>
+   <div id="tabs-2">
+     <p>Batu 3/4, A-14-15, Pokok Asam, Kuah, Kuah, Langkawi, Kedah, Malaysia, 07000.</p>
+   </div>
+   <div id="tabs-3">
+   <ul>
+     <li>Premium Deluxe
+  </li>
+  <li>Standard Twin Room</li>
+  <li>
+  Suite Room</li>
+  <li>
+Deluxe Twin
+  </li>
+  <li>Deluxe Triple Room</li>
+  <li>Superior Twin</li>
+  <li>Superior Triple Room</li>
+  <li>Standard Double/Twin</li>
+  <li>Double Premier</li>
+  <li>Standard Twin Room With Breakfast</li>
+   </ul>
+   </div>
+   <div id="tabs-4">
+     <li>Air Conditioning </li>
+     <li>Parking</li>
+     <li>24-Hour Front Desk</li>
+     <li>Elevator</li>
+     <li>Restaurant</li>
+     <li>Wifi</li>
+     <li>Swimming Pool</li>
+   </div>
+   <div id="tabs-5">
+   <ul>
+     <li>Lagenda Park(2.44 km)
+  </li>
+  <li>Eagle Square(2.62 km)</li>
+  <li>
+  Kuah Jetty(2.75 km)</li>
+  <li>
+  Beringin Beach(4.38 km)
+  </li>
+   </ul>
+   </div>
+   <div id="tabs-6">
+     <p>"I would definitely recommend people to stay at this place during their visit to Langkawi.
+        Great location because it near Kuah Town. Location is near to shopping mall so we can shop
+        until mall close. Taxi kiosk is next to the hotel. The rooms are clean and the staff is friendly."</p>
+   </div>
+ </div>
+
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <h6 class="comment-name by-author"><a href="https://www.agoda.com/hotel-langkasuka/hotel/langkawi-my.html?cid=-218 "target="_blank">
+    CHECK ROOM PRICE HERE</a></h6>
+  <h2>Rating</h2>
+  <div class="row">
+    <div class="side">
+      <div>Price</div>
+    </div>
+    <div class="star">
+
+
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star unchecked"></span>
+  </div>
+  <p>4/5</p>
+  </div>
+
+  <h2></h2>
+  <div class="row">
+    <div class="side">
+      <div>Location</div>
+    </div>
+    <div class="star">
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star-half-o checked"></span>
+  </div>
+  <p>4.5/5</p>
+  </div>
+
+
+  <h2></h2>
+  <div class="row">
+    <div class="side">
+      <div>Facilities</div>
+    </div>
+    <div class="star">
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star-half-o checked"></span>
+  </div>
+  <p>4.5/5</p>
+  </div>
+
+  <h2></h2>
+  <div class="row">
+    <div class="side">
+      <div>Cleanliness</div>
+    </div>
+    <div class="star">
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star-half-o checked"></span>
+  </div>
+  <p>4.5/5</p>
+  </div>
+
+  <h2></h2>
+  <div class="row">
+    <div class="side">
+      <div>Service</div>
+    </div>
+    <div class="star">
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star-half-o checked"></span>
+  </div>
+  <p>4.5/5</p>
+  </div>
+<hr>
+  <h4>4.Hotel Grand Continental Langkawi</h4>
+<div class="con">
+        <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/132/132407370.jpg" alt="">
+</div>
+
+<br>
+
+     <div id="tabs3">
+   <ul>
+     <li><a href="#tabs-1">Info</a></li>
+     <li><a href="#tabs-2">Address</a></li>
+     <li><a href="#tabs-3">Room</a></li>
+     <li><a href="#tabs-4">Facilities</a></li>
+      <li><a href="#tabs-5">Nearby Attractions</a></li>
+      <li><a href="#tabs-6">Review</a></li>
+   </ul>
+   <div id="tabs-1">
+     <p>
+This seven-story building of Malay architectural design provides 194 spacious rooms in the shopping haven of
+Kuah Town. Grand Continental Langkawi Hotel is just a 25-minute drive from the Langkawi International Airport
+and a 10-minute drive from the Kuah Jetty. The 3-star hotel is strategically situated amongst the many duty-free
+shops, banks, and department stores, making it the ideal location for shoppers. From the swimming pool, guests
+will have a splendid view of Yacht Bay and the many tiny islands that dot the sea. The on-site restaurant, Sri
+Dayang Coffee House, serves a large selection of local dishes with cakes and pastries served daily. Our secure
+online booking form makes reserving your room at Grand Continental Langkawi Hotel simple - just fill in your
+desired dates and click. </p>
+   </div>
+   <div id="tabs-2">
+     <p>Lot 398, Mukim Kuah Kelibang, Kuah, Kuah, Langkawi, Kedah, Malaysia, 07000.</p>
+   </div>
+   <div id="tabs-3">
+   <ul>
+  <li>Deluxe Double</li>
+  <li>Suite</li>
+  <li>Deluxe Triple 1 Double Bed and 1 Single Bed</li>
+  <li>Deluxe Twin</li>
+  <li>Standard Triple</li>
+  <li>Standard Twin</li>
+  <li>Standard Family Triple</li>
+  <li>Junior Suite</li>
+  <li>Standard Family with Breakfast</li>
+  <li>DELUXE TRIPLE ROOM + Breakfast</li>
+   </ul>
+   </div>
+   <div id="tabs-4">
+     <li>Air Conditioning </li>
+     <li>Parking</li>
+     <li>24-Hour Front Desk</li>
+     <li>Elevator</li>
+     <li>Restaurant</li>
+     <li>Wifi</li>
+     <li>Swimming Pool</li>
+   </div>
+   <div id="tabs-5">
+   <ul>
+     <li>Lagenda Park(2.52 km)
+  </li>
+  <li>Eagle Square(2.68 km)</li>
+  <li>
+  Kuah Jetty(2.80 km)</li>
+  <li>
+  Beringin Beach(.4.44 km)
+  </li>
+   </ul>
+   </div>
+   <div id="tabs-6">
+     <p>"Most of staff very helpful in managing our accommodation rooms. This hotel is very comfortable.
+       The room was fine and clean. Breakfast was great and delicious. I like the location because nearby
+       facilities. Parking is easy, lots of free parking lots available."</p>
+   </div>
+ </div>
+
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <h6 class="comment-name by-author"><a href="https://www.agoda.com/hotel-langkasuka/hotel/langkawi-my.html?cid=-218 "target="_blank">
+    CHECK ROOM PRICE HERE</a></h6>
+  <h2>Rating</h2>
+  <div class="row">
+    <div class="side">
+      <div>Price</div>
+    </div>
+    <div class="star">
+
+
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star unchecked"></span>
+  </div>
+  <p>4/5</p>
+  </div>
+
+  <h2></h2>
+  <div class="row">
+    <div class="side">
+      <div>Location</div>
+    </div>
+    <div class="star">
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star-half-o checked"></span>
+  </div>
+  <p>4.5/5</p>
+  </div>
+
+
+  <h2></h2>
+  <div class="row">
+    <div class="side">
+      <div>Facilities</div>
+    </div>
+    <div class="star">
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star unchecked"></span>
+  </div>
+  <p>4/5</p>
+  </div>
+
+  <h2></h2>
+  <div class="row">
+    <div class="side">
+      <div>Cleanliness</div>
+    </div>
+    <div class="star">
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star unchecked"></span>
+  </div>
+  <p>4/5</p>
+  </div>
+
+  <h2></h2>
+  <div class="row">
+    <div class="side">
+      <div>Service</div>
+    </div>
+    <div class="star">
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star unchecked"></span>
+  </div>
+  <p>4/5</p>
+  </div>
+<hr>
+<h4>5.Malibest Resort Langkawi</h4>
+
+<div class="con">
+  <img src="https://exp.cdn-hotels.com/hotels/11000000/10010000/10008900/10008852/10008852_47_z.jpg" alt="">
+
+</div>
+
+<br>
+<div id="tabs4">
+<ul>
+<li><a href="#tabs-1">Info</a></li>
+<li><a href="#tabs-2">Address</a></li>
+<li><a href="#tabs-3">Room</a></li>
+<li><a href="#tabs-4">Facilities</a></li>
+<li><a href="#tabs-5">Nearby Attractions</a></li>
+<li><a href="#tabs-6">Review</a></li>
+</ul>
+<div id="tabs-1">
+<p>
+Located in a perfect area of Langkawi, this property is the perfect option for guests who wish to spend their
+valuable holiday in a great destination. All the 88 rooms and five treetop chalets are beautifully and fully
+equipped, featuring basic amenities to provide utmost comfort to guests. While staying here, guests can also
+enjoy shopping at Mali Walk Beaches, after which they can savor delicious meals at the on-site restaurant.
+The conference and meeting hall is also available for guests who wish to hold some business events.
+Malibest Resort is a perfect getaway destination and a great value for money. </p>
+</div>
+<div id="tabs-2">
+<p>Pantai Cenang, Mukim Kedawang, Pantai Cenang, Langkawi, Kedah, Malaysia, 07000.</p>
+</div>
+<div id="tabs-3">
+<ul>
+<li>Superior (Twin Bed)
+</li>
+<li>Superior (Twin Bed)</li>
+<li>
+Deluxe Family</li>
+<li>
+Family Room
+</li>
+<li>Standard Brick</li>
+<li>Single Room - Superior</li>
+<li>Superior (Double Or Twin)</li>
+<li>Family Room Two Double Beds</li>
+<li>Standard Double or Twin</li>
+</ul>
+</div>
+<div id="tabs-4">
+  <li>Swimming Pool</li>
+  <li>Wifi</li>
+  <li>Elevator</li>
+</div>
+<div id="tabs-5">
+<ul>
+<li>Laman Padi Langkawi(0.53 km)
+</li>
+<li>Underwater World Langkawi(0.85 km)</li>
+<li>Tengah Beach(2.42 km)
+</li>
+<li>
+Cenang Beach(0.09 km)
+</li>
+</ul>
+</div>
+<div id="tabs-6">
+  <p>"Room was spacious and very well set up.This resort is very strategic. It is very near to the airport,
+    and the drive to other main attractions such as Oriental Village (Sky Cab and Sky Bridge) and Mahsuri's Tomb.
+    Great location, central to the food and shopping street and hotel is right on the beach. Easy to get food &
+    drinks at the local shop. The staff are very nice. Easy parking space for customers. The pool is too crowded
+    with people but fine to me. Overall it is good place to stay with reasonable price."</p>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<h6 class="comment-name by-author"><a href="https://www.agoda.com/malibest-resort/hotel/langkawi-my.html?cid=-218 "target="_blank">
+  CHECK ROOM PRICE HERE</a></h6>
+<h2>Rating</h2>
+<div class="row">
+  <div class="side">
+    <div>Price</div>
+  </div>
+  <div class="star">
+
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star unchecked"></span>
+</div>
+<p>4/5</p>
+</div>
+
+<h2></h2>
+<div class="row">
+  <div class="side">
+    <div>Location</div>
+  </div>
+  <div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+</div>
+<p>4.5/5</p>
+</div>
+
+
+<h2></h2>
+<div class="row">
+  <div class="side">
+    <div>Facilities</div>
+  </div>
+  <div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star unchecked"></span>
+</div>
+<p>4/5</p>
+</div>
+
+<h2></h2>
+<div class="row">
+  <div class="side">
+    <div>Cleanliness</div>
+  </div>
+  <div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star unchecked"></span>
+</div>
+<p>4/5</p>
+</div>
+
+<h2></h2>
+<div class="row">
+  <div class="side">
+    <div>Service</div>
+  </div>
+  <div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star unchecked"></span>
+</div>
+<p>4/5</p>
+</div>
+  </body>
+</html>

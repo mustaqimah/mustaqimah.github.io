@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h2 {
+  font-weight: bold;
+  font-family: fantasy;
+  position: center;
+  font-size: 50px;
+}
+
+body{
+  background-color: #fef2da;
+}
+
+.accordion {
+    background-color: #3d2d2d;
+    color:  white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+.accordion.active,
+.accordion:hover{
+    background-color: #8c6767;
+    text-decoration: none;
+}
+
+
+.panel {
+    padding: 0 10px;
+    display: none;
+    background-color: #f7f7f7;
+    overflow: hidden;
+}
+
+.container{
+  position: relative;
+text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #d3c6c1;
+    margin-bottom: 1%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+}
+
+.topnav a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.topnav a:hover {
+    text-decoration: line-through;
+}
+
+.topnav a.active {
+    color: white;
+}
+
+</style>
+<title>MYTour-Destination</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="topnav">
+      <a href="faq.html#faq">F.A.Q</a>
+      <a href="moment.html#moment">Moment</a>
+      <a href="article.html#article">Article</a>
+      <a href="itinerary.html#itinerary">Itinerary</a>
+      <a href="hotel.html#hotel">Hotels</a>
+      <a class="active" href="destination.html#destination">Destination</a>
+      <a href="index.html#home">Home</a>
+      </div>
+
+
+<h2>Embark on making the memory</h2>
+
+<button class="accordion">Johor</button>
+<div class="panel">
+  <p>Rawa Island Resort, Pulau Rawa.</p>
+</div>
+
+<button class="accordion">Pahang</button>
+<div class="panel">
+  <p>Japamala Resort, Pulau Tioman.</p>
+</div>
+
+<button class="accordion">Terengganu</button>
+<div class="panel">
+  <p>Laguna Redang Resort, Pulau Redang.</p>
+</div>
+
+<button class="accordion">Sabah</button>
+<div class="panel">
+  <p>Pulau Bohey Dulang, Semporna.</p>
+</div>
+
+<button class="accordion">Selangor</button>
+<div class="panel">
+  <p>Sasaran, Kuala Selangor.</p>
+</div>
+
+<button class="accordion">Melaka</button>
+<div class="panel">
+  <p>Paya Rumput, Melaka.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
+
+<div class="row">
+  <div class="column">
+    <img src="japamala.jpg" alt="b1" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="Pulau-Rawa-Malaysia-Photo-by-Phalinn-Ooi-672x372.jpg" alt="b2" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="pulau bohey.jpg" alt="b3" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="sky mirror.jpg" alt="mirror" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>

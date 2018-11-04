@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #fef2da;
+    }
+
+    .topnav {
+      display: block;
+        overflow: hidden;
+        background-color: #d3c6c1;
+        margin-bottom: 1%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 0%;
+    }
+
+    .topnav a {
+        float: right;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 12px;
+        font-family: 'Montserrat', sans-serif;
+        display: block;
+    }
+
+    .topnav a:hover {
+        text-decoration: line-through;
+    }
+
+    .topnav a.active {
+        color: white;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .bg-image {
+      background-image: url("beach-clouds-daytime-994605.jpg");
+      filter: blur(1px);
+      -webkit-filter: blur(1px);
+      height: 90%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .bg-text {
+      background-color: rgb(0,0,-0.2);
+      background-color: rgba(0,0,0,0.4);
+      color: black ;
+      font-weight: bold;
+      border: 1px solid none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 80%;
+      padding: 20px;
+      text-align: center;
+    }
+
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    .box {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 10px;
+    }
+
+    .column {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        padding: 20px;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    @media screen and (max-width: 600px) {
+        .column, input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+        }
+    }
+    </style>
+    <title>About Us</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="topnav">
+        <a class="active" href="faq.html#faq">F.A.Q</a>
+        <a href="moment.html#moment">Moment</a>
+        <a href="article.html#article">Article</a>
+        <a href="itinerary.html#itinerary">Itinerary</a>
+        <a href="hotel.html#hotel">Hotels</a>
+        <a href="destination.html#destination">Destination</a>
+        <a href="index.html#home">Home</a>
+        </div>
+
+      </div>
+
+
+    <div class="bg-image"></div>
+    <div class="bg-text">
+  <h1>MYTour</h1>
+  <p>We have been operating as a platform for giving some ideas
+    to help you to find unexplored, 'hidden' places with exclusive scenery in Malaysia.
+    We are real people, with a real passion for what we do — see for yourself!</p>
+</div>
+
+<div class="box">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Any enquiries or suggestion, drop us a message</p>
+  </div>
+  <div class="row">
+    <div class="column">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="malaysia">Malaysia</option>
+          <option value="china">China</option>
+          <option value="indonesia">Indonesia</option>
+          <option value="singapore">Singapore</option>
+          <option value="japan">Japan</option>
+          <option value="skorea">South Korea</option>
+          <option value="thai">Thailand</option>
+          <option value="vietnam">Vietnam</option>
+          <option value="usa">United States of America</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+
+  </body>
+</html>

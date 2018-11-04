@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MYTOUR-FAQ</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script>
+
+
+    $(document).ready(function() {
+	function close_accordion_section() {
+		$('.accordion .accordion-section-title').removeClass('active');
+		$('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+	}
+
+	$('.accordion-section-title').click(function(e) {
+		// Grab current anchor value
+		var currentAttrValue = $(this).attr('href');
+
+		if($(e.target).is('.active')) {
+			close_accordion_section();
+		}else {
+			close_accordion_section();
+
+			// Add active class to section title
+			$(this).addClass('active');
+			// Open up the hidden content panel
+			$('.accordion ' + currentAttrValue).slideDown(300).addClass('open');
+		}
+
+		e.preventDefault();
+	});
+});
+
+
+</script>
+    <style type="text/css">
+      body{
+        margin: 0 auto;
+        min-width: 1000px;
+        max-width: 1400px;
+        font-family: Arial;
+        padding: 20px;
+        background: #fef2da;
+        padding-top: 8px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      h1{
+        font-weight: bold;
+        font-family: fantasy;
+        text-align: center;
+        font-size: 50px;
+      }
+      /*----- Accordion -----*/
+.accordion,
+.accordion * {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+
+}
+
+.accordion {
+	overflow:hidden;
+	box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+	border-radius:3px;
+	background:#f7f7f7;
+
+}
+
+/*----- Section Titles -----*/
+.accordion-section-title {
+	width:100%;
+	padding:15px;
+	display:inline-block;
+	border-bottom:1px solid #1a1a1a;
+	background:#3d2d2d;
+	transition:all linear 0.15s;
+	/* Type */
+	font-size:1.200em;
+	text-shadow:0px 1px 0px #1a1a1a;
+	color:#fff;
+  //margin-top: 10px;
+}
+
+.accordion-section-title.active,
+.accordion-section-title:hover {
+	background:#8c6767;
+	/* Type */
+	text-decoration:none;
+}
+
+.accordion-section:last-child .accordion-section-title {
+	border-bottom:none;
+}
+
+/*----- Section Content -----*/
+.accordion-section-content {
+	padding:15px;
+	display:none;
+
+}
+
+body{
+  margin:0;
+}
+
+h2{
+  font-size: 20px;
+  font-family: arial;
+  //margin-top: 10px;
+}
+.fin{
+padding-top: 10px;
+margin-bottom: 10px;
+width:100px;
+height:36px;
+border:none;
+}
+.fin{
+    margin-top: 10px;
+}
+textarea {
+  width:250px;
+  height:100px;
+}
+.sub{
+ padding: 10px;
+ width: 150px;
+ border-radius: 10px;
+background-color: #CACFD2  ;
+  font-weight:bold;
+}
+.sub:hover{
+
+  background-color: #5D6D7E  ;
+}
+.middle {
+    margin-top:10px;
+    float: left;
+    width:85%;
+
+}
+
+/* Place text to the right */
+.right {
+ margin-top:10px;
+ float:left;
+ font-size: 12px;
+ background-color: #C0C0C0;
+ border:1px solid black
+ padding-top: 5px;
+ width:50px;
+ height: 20px
+
+}
+div.tt p{
+    margin-left: 8px;
+    margin-top: 1px;
+}
+
+.right:hover{
+  background-color:#D3D3D3;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+    p{
+      font-family: Arial;
+
+    }
+    h3{
+      font-size: 20px;
+    }
+
+    span{
+      font-size: 15px;
+    }
+    .comment-avatar img {
+      margin-top:10px;
+      border-radius: 5%;
+      width: 5%;
+      height: 3%;
+      float:left;
+      padding-right: 30px;
+
+    }
+ .middle small{
+  color: #999;
+ font-size: 13px;
+ position: relative;
+ top: 1px;
+}
+
+.container{
+  position: relative;
+text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #d3c6c1;
+    margin-bottom: 1%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+}
+
+.topnav a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.topnav a:hover {
+    text-decoration: line-through;
+}
+
+.topnav a.active {
+    color: white;
+}
+
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="topnav">
+        <a class="active" href="faq.html#faq">F.A.Q</a>
+        <a href="moment.html#moment">Moment</a>
+        <a href="article.html#article">Article</a>
+        <a href="itinerary.html#itinerary">Itinerary</a>
+        <a href="hotel.html#hotel">Hotels</a>
+        <a href="destination.html#destination">Destination</a>
+        <a href="index.html#home">Home</a>
+        </div>
+
+      </div>
+
+
+    <h1>Frequently Asked Question</h1>
+    <div class="accordion">
+	<div class="accordion-section">
+		<a class="accordion-section-title" href="#accordion-1">1. Do I need a passport to travel to the Sabah
+      and Sarawak (Borneo) part of Malaysia?</a>
+
+		<div id="accordion-1" class="accordion-section-content">
+			<p>Yes, all foreign nationals need a passport to travel between Peninsular Malaysia and Borneo Malaysia.
+        Malaysian citizens are required to present their ID Cards when travelling between the two different
+         parts of Malaysia, and as expats do not get issued with a Malaysian ID, they are required to present
+         their passport on entry and departure.</p>
+		</div><!--end .accordion-section-content-->
+	</div><!--end .accordion-section-->
+</div><!--end .accordion-->
+
+<div class="accordion">
+<div class="accordion-section">
+<a class="accordion-section-title" href="#accordion-2">2.  Do I need any vaccinations?</a>
+
+<div id="accordion-2" class="accordion-section-content">
+  <p>Travelers have very little to worry about in a country where health standards are ranked amongst the highest in Asia. Vaccinations are not required to enter Malaysia unless you are coming from a "yellow" infected area.</p>
+</div><!--end .accordion-section-content-->
+</div><!--end .accordion-section-->
+</div><!--end .accordion-->
+
+<div class="accordion">
+<div class="accordion-section">
+<a class="accordion-section-title" href="#accordion-3">3.What is the national language?</a>
+
+<div id="accordion-3" class="accordion-section-content">
+  <p>Bahasa Malaysia is the national and official language. English is widely used especially in commerce and industry. Several Chinese and Indian dialects are also spoken.</p>
+</div><!--end .accordion-section-content-->
+</div><!--end .accordion-section-->
+</div><!--end .accordion-->
+
+<div class="accordion">
+<div class="accordion-section">
+<a class="accordion-section-title" href="#accordion-4">4. What if I were to travel alone?</a>
+
+<div id="accordion-4" class="accordion-section-content">
+  <p>Malaysians are friendly, and travelling alone is generally safe and relatively comfortable for both men and women.
+    Plan your trip around your interests and prepare yourself to be flexible enough
+to take the inevitable glitches in stride. Visitors who encounter unforeseen problems and difficulties can seek the Malaysian
+Tourist Police Unit or any other Police Station for assistance.</p>
+</div><!--end .accordion-section-content-->
+</div><!--end .accordion-section-->
+</div><!--end .accordion-->
+
+<div class="accordion">
+<div class="accordion-section">
+<a class="accordion-section-title" href="#accordion-5">5. What is the electricity supply rating of Malaysia?</a>
+
+<div id="accordion-5" class="accordion-section-content">
+  <p>Malaysia�s electrical supply is 220 - 240 volts A C at 50 cycles per second, though our sockets and plug points may seem strange
+to you.</p>
+</div><!--end .accordion-section-content-->
+</div><!--end .accordion-section-->
+</div><!--end .accordion-->
+
+<div class="accordion">
+<div class="accordion-section">
+<a class="accordion-section-title" href="#accordion-6">6. What are the medical services available in Malaysia?</a>
+
+<div id="accordion-6" class="accordion-section-content">
+  <p>Medical services are available in all towns at government run hospitals and private clinics.
+    Non-prescription drugs are available at pharmacies as well as supermarkets, hotels, and shopping centres.
+    International class hotels also have their individual in-house medical practitioner to service their guests.</p>
+</div><!--end .accordion-section-content-->
+</div><!--end .accordion-section-->
+</div><!--end .accordion-->
+
+<div class="accordion">
+<div class="accordion-section">
+<a class="accordion-section-title" href="#accordion-7">7. How do I rent and drive a car in Malaysia?</a>
+
+<div id="accordion-7" class="accordion-section-content">
+  <p>You will require an international driving permit or a valid license issued by your government to drive
+    in Malaysia. Car rental can be arranged through hotel or through various car rental companies which can be
+     located through the Yellow Pages Directory. Major international car rental companies are also available in Malaysia.</p>
+</div><!--end .accordion-section-content-->
+</div><!--end .accordion-section-->
+</div><!--end .accordion-->
+
+<div class="accordion">
+<div class="accordion-section">
+<a class="accordion-section-title" href="#accordion-8">8.Are there any cultural tips I should know about to avoid cultural offence?</a>
+
+<div id="accordion-8" class="accordion-section-content">
+  <p>To avoid "cultural offences", here are some tips: "Remove shoes when entering homes and places of worship.
+     "Dress neatly in suitable attire which covers arms and legs when visiting places of worship.
+      "When handling food, do so with the right hand only. "Tipping is not a custom in Malaysia.
+       It is unnecessary in hotels and restaurants where a 10% service charge is imposed, unless the
+       service rendered is exceptionally good. Refrain from raising your voice or displaying fits of anger
+       as considered ill mannered.</p>
+</div><!--end .accordion-section-content-->
+</div><!--end .accordion-section-->
+</div><!--end .accordion-->
+
+<div class="accordion">
+<div class="accordion-section">
+<a class="accordion-section-title" href="#accordion-9">9. Do I require medical insurance before traveling to Malaysia?</a>
+
+<div id="accordion-9" class="accordion-section-content">
+  <p>It is good idea for you to take medical insurance before you travel to Malaysia as Malaysia does not have reciprocal health service agreements with other nations.</p>
+</div><!--end .accordion-section-content-->
+</div><!--end .accordion-section-->
+</div><!--end .accordion-->
+
+<div class="accordion">
+<div class="accordion-section">
+<a class="accordion-section-title" href="#accordion-10">10. What about Money changers, Charge/Credit Cards & Travellers Checks</a>
+
+<div id="accordion-10" class="accordion-section-content">
+  <p>There are licensed money changers in all major towns in Malaysia. Most are found in commercial districts and
+    at shopping malls. The rates are very reasonable. You can check exchange rates in the local newspapers.
+    Most large establishments will accept internationally known credit cards and charge cards, though we do
+    advise caution. Travellers cheques are best cashed at banks for the best rates.</p>
+</div><!--end .accordion-section-content-->
+</div><!--end .accordion-section-->
+</div><!--end .accordion-->
+
+<div class="accordion">
+<div class="accordion-section">
+<a class="accordion-section-title" href="#accordion-11">11. What about the currency?</a>
+
+<div id="accordion-11" class="accordion-section-content">
+  <p>Malaysia currency is in Ringgit (RM) and sen. A resident/non-resident is permitted to carry into and
+    out of Malaysia, Ringgit notes not exceeding RM1,000. A resident is permitted to carry out of Malaysia
+    foreign currency including traveller's cheques not exceeding RM10,000. A non-resident is permitted to
+    carry out of Malaysia foreign currency including traveller's cheques not exceeding the amount brought
+    in. Should you need to carry currency in excess of the permitted limits, please obtain prior written
+    permission from the Central Bank authorities.</p>
+</div><!--end .accordion-section-content-->
+</div><!--end .accordion-section-->
+</div><!--end .accordion-->
+
+<div class="accordion">
+<div class="accordion-section">
+<a class="accordion-section-title" href="#accordion-12">12.  What is the time difference?</a>
+
+<div id="accordion-12" class="accordion-section-content">
+  <p>Standard Malaysia time is 8 hours ahead of Greenwich Mean Time (GMT), 7 hours ahead of summer and 8 hours ahead of winter.</p>
+</div><!--end .accordion-section-content-->
+</div><!--end .accordion-section-->
+</div><!--end .accordion-->
+
+<div class="accordion">
+<div class="accordion-section">
+<a class="accordion-section-title" href="#accordion-13">13.  Can I store my luggage at the airport?</a>
+
+<div id="accordion-13" class="accordion-section-content">
+  <p>Lockers are available for luggage storage at the airport.</p>
+</div><!--end .accordion-section-content-->
+</div><!--end .accordion-section-->
+</div><!--end .accordion-->
+
+<div class="accordion">
+<div class="accordion-section">
+<a class="accordion-section-title" href="#accordion-14">14.  Will there be any customs charges upon arrival?</a>
+
+<div id="accordion-14" class="accordion-section-content">
+  <p>Items such as video equipment, cameras, radio cassette players, watches, pens, lighters, perfumes and cosmetics
+     are duty free in Malaysia. Visitors bringing in dutiable goods may have to pay a deposit for temporary
+     importation, refundable upon departure.</p>
+</div><!--end .accordion-section-content-->
+</div><!--end .accordion-section-->
+</div><!--end .accordion-->
+
+<div class="accordion">
+<div class="accordion-section">
+<a class="accordion-section-title" href="#accordion-15">15.  What is the procedure if I want to bring pets into Malaysia?</a>
+
+<div id="accordion-15" class="accordion-section-content">
+  <p>It is advisable for you to contact the Malaysian Diplomatic Mission nearest you for up-to-date
+    information concerning the importation of pets from your country. Various airline companies may
+    also be able to help you with this.</p>
+</div><!--end .accordion-section-content-->
+</div><!--end .accordion-section-->
+</div><!--end .accordion-->
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<br>
+<br>
+<h2>3 comments</h2>
+    <div class="row">
+      <div class="side">
+          <div class="comment-avatar">
+            <img src="http://0.gravatar.com/avatar/0c4d8b1124205c9e37111ecda9282153?s=100&d=wavatar&r=g" alt="">
+      </div>
+      <div class="middle">
+        <small>Nur Liyana</small><br>
+        <span>OCT 30,2018 AT 11.59 PM</span>
+            <p>Is 2 weeks to Malaysia too long or too short?</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="tt">
+            <p>Reply</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="row">
+      <div class="side">
+          <div class="comment-avatar"><img src="http://2.gravatar.com/avatar/8bfbc3ffece5abf40a0b546b3c9d5d95?s=100&d=wavatar&r=g" alt="">
+      </div>
+      <div class="middle">
+        <small>Muhd Safwan</small><br>
+        <span>OCT 31,2018 AT 10.10 AM</span>
+            <p> Are all hotel prices inclusive of all taxes and services charges?</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="tt">
+            <p>Reply</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="row">
+      <div class="side">
+          <div class="comment-avatar"><img src="http://0.gravatar.com/avatar/950c204e4b21292119de5e9181d12264?s=100&d=wavatar&r=g" alt="">
+      </div>
+      <div class="middle">
+        <small>Raja Adnan</small><br>
+        <span>NOV 1,2018 AT 2.50 PM</span>
+            <p>Is it dangerous at night in Malaysia city?</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="tt">
+            <p>Reply</p>
+        </div>
+      </div>
+    </div>
+
+  <br>
+<h3>Leave a reply</h3>
+<form class="sign-up" action="index.html" method="post">
+    <div class="fin">
+    <label for="">Name:</label>
+    <input type="text" name="" value="" class="name">
+  </div>
+  <div class="fin">
+    <label for="">Email:</label>
+    <input type="email" name="" value="" class="email">
+  </div>
+  <div class="fin">
+    <label for="">Comment:</label>
+    <br>
+  <textarea name='comment' id='comment'></textarea><br/>
+  <div class="fin submit">
+    <input type="submit" value="POST COMMENT" class="sub">
+  </div>
+</div>
+</form>
+
+  </body>
+</html>
