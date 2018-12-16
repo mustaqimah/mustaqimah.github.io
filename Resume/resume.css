@@ -11,7 +11,7 @@ img{
 
 }
 .intro, .objective, .education{
-  margin-top: 3px;
+  margin-top: 0.5px;
   padding-left: 10px;
   padding-right: 10px;
   background-image: url(background.jpg);
@@ -23,7 +23,7 @@ img{
 }
 
 .contribute{
-  margin-top: 3px;
+  margin-top: 0.5px;
   padding-left: 10px;
   margin-right: 15px;
   margin-left: 15px;
@@ -35,7 +35,7 @@ img{
   width: 53%;
 }
 .skills{
-  margin-top: 3px;
+  margin-top: 0.5px;
   padding-left: 10px;
   margin-right: 15px;
   margin-left: 15px;
@@ -45,6 +45,18 @@ img{
   border: 1px solid black;
   width:42.7%;
 }
+
 hr{
-  border: 2px solid #ffadac;
+  border: 3px solid #ffadac;
+}
+
+p{
+  color:  #8f2432;
+  float: right;
+  padding-right: 20px;
+  font-size: 30px;
+}
+
+.education p{
+  padding-top: 70px;
 }
