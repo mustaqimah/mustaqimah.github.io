@@ -5,7 +5,6 @@ body{
 img{
   width:30%;
   height: 30%;
-  padding-left: 10%;
   float: left;
   border-radius: 50%;
 
@@ -51,7 +50,7 @@ hr{
 }
 
 p{
-  color:  #8f2432;
+  color:   #990005;
   float: right;
   padding-right: 20px;
   font-size: 30px;
