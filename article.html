@@ -5,6 +5,7 @@
     <title>MYTour-Article</title>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 
     <style media="screen">
     body{
@@ -25,7 +26,7 @@
 
     p{
       font-weight: bold;
-      font-family: fantasy;
+      font-family: 'Dancing Script', cursive;
       position: center;
       font-size: 50px;
    }
@@ -51,23 +52,25 @@ h1{
   }
 
 h2{
-  font-size: 100%;
-  display:inline-block;
+  font-size: 90%;
+  display:block;
   padding:10px;
   border:1px solid black;
-  position: left;
+  position: middle;
+  width: 50%;
+  margin-left: 25%;
 
 }
 
 h2:hover{
- border:1px solid none;
- background-color: black;
+ border:1px solid #8c6767;
+ background-color: #8c6767;
  color: white;
 }
   .topnav {
     display: block;
       overflow: hidden;
-      background-color: #d3c6c1;
+      background-color: #5a5240;
       margin-bottom: 1%;
       margin-left: 0%;
       margin-right: 0%;
@@ -86,7 +89,8 @@ h2:hover{
   }
 
   .topnav a:hover {
-      text-decoration: line-through;
+      color: white;
+      background-color: black;
   }
 
   .topnav a.active {
@@ -94,7 +98,22 @@ h2:hover{
 
   }
 
+  .footer {
+    position: absolute;
+    right: 0;
+    margin-top: 0%;
+    left: 0;
+    text-align: center;
+    background-color: #5a5240;
+    padding: 30px;
+    color: white;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+  }
 
+  hr{
+    border: 4px solid #898c9b;
+  }
 
   </style>
   </head>
@@ -122,7 +141,7 @@ h2:hover{
     <h2 onclick="location.href='backpack.html'">Read More</h2>
 
     <br>
-    <hr color="grey">
+
 
     <p onclick="location.href='solo.html'">Solo traveller: safest place to go out of country</p>
     <img src="adult-adventure-backpack-1540592.jpg" alt="solo travel">
@@ -132,11 +151,14 @@ h2:hover{
     <h2 onclick="location.href='solo.html'">Read More</h2>
 
     <br>
-    <hr color="grey">
 
 </div>
 
-
+<hr>
+<div class="footer">
+  <h3>Copyright © 2018, MYTour. All Rights Reserved.</h3>
+  <h3>International Islamic University Malaysia - Gombak</h3>
+</div>
 
 </div>
 

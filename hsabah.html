@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HR Sabah</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/eggplant/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+        <script>
+
+
+      $( function() {
+      $( "#tabs" ).tabs();
+      } );
+
+
+      $( function() {
+      $( "#tabs1" ).tabs();
+      } );
+
+
+      $( function() {
+      $( "#tabs2" ).tabs();
+      } );
+
+
+      $( function() {
+      $( "#tabs3" ).tabs();
+      } );
+
+
+      $( function() {
+      $( "#tabs4" ).tabs();
+      } );
+
+</script>
+<script type="text/javascript">
+  function init() {
+var mapOptions = { // Set up the map options
+center: new google.maps.LatLng(5.973049, 116.075972),
+mapTypeId: google.maps.MapTypeId.ROADMAP, zoom: 13 };
+var mapOptions2 = { // Set up the map options
+center: new google.maps.LatLng(5.982567, 116.076034),
+mapTypeId: google.maps.MapTypeId.ROADMAP, zoom: 13 };
+var mapOptions3 = { // Set up the map options
+center: new google.maps.LatLng(5.965071, 116.068819),
+mapTypeId: google.maps.MapTypeId.ROADMAP, zoom: 13 };
+var mapOptions4 = { // Set up the map options
+center: new google.maps.LatLng(5.982177, 116.580115),
+mapTypeId: google.maps.MapTypeId.ROADMAP, zoom: 13 };
+var mapOptions5 = { // Set up the map options
+center: new google.maps.LatLng(5.976906, 116.579625),
+mapTypeId: google.maps.MapTypeId.ROADMAP, zoom: 13 };
+var venueMap; // Map() draws a map
+venueMap = new google.maps.Map(document.getElementById('map'), mapOptions);
+var venueMap2; // Map() draws a map
+venueMap2 = new google.maps.Map(document.getElementById('map2'), mapOptions2);
+
+var venueMap3; // Map() draws a map
+venueMap3 = new google.maps.Map(document.getElementById('map3'), mapOptions3);
+
+var venueMap4; // Map() draws a map
+venueMap4 = new google.maps.Map(document.getElementById('map4'), mapOptions4);
+
+var venueMap5; // Map() draws a map
+venueMap5 = new google.maps.Map(document.getElementById('map5'), mapOptions5);
+}
+function loadScript() {
+var script = document.createElement('script'); // Create <script> element
+script.src = 'http://maps.googleapis.com/maps/api/js?sensor=false&callback=init';
+document.body.appendChild(script); // Add element to page
+var script2 = document.createElement('script2'); // Create <script> element
+script.src = 'http://maps.googleapis.com/maps/api/js?sensor=false&callback=init';
+document.body.appendChild(script2); // Add element to page
+var script3 = document.createElement('script3'); // Create <script> element
+script.src = 'http://maps.googleapis.com/maps/api/js?sensor=false&callback=init';
+document.body.appendChild(script3); // Add element to page
+var script4 = document.createElement('script4'); // Create <script> element
+script.src = 'http://maps.googleapis.com/maps/api/js?sensor=false&callback=init';
+document.body.appendChild(script4); // Add element to page
+var script5 = document.createElement('script5'); // Create <script> element
+script.src = 'http://maps.googleapis.com/maps/api/js?sensor=false&callback=init';
+document.body.appendChild(script5); // Add element to page
+}
+window.onload = loadScript; // on load call loadScript()
+</script>
+    <style type="text/css">
+    body{
+      padding: 0;
+      margin: 0;
+      background-color: #fef2da;
+    }
+
+    .footer {
+      position: absolute;
+      right: 0.75%;
+      margin-top: 0;
+      left: 0.75%;
+      text-align: center;
+      background-color: #5a5240;
+      padding: 30px;
+      color: white;
+
+    }
+
+    .footer h3{
+      font-size: 90%;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .foot hr{
+
+      border: 4px solid #898c9b;
+      margin-left: 0.7%;
+      margin-right: 0.7%;
+    }
+
+    .container-content{
+      margin: 0 auto;
+      min-width: 1000px;
+      max-width: 1400px;
+      font-family: Arial;
+      background-color:#fff;
+      width: 500px;
+    }
+      * {
+          box-sizing: border-box;
+      }
+      h1{
+        color: black;
+        font-size: 50px;
+        font-family: 'Dancing Script', cursive;
+        text-align: center;
+      }
+      h4{
+        margin-left: 13%;
+        font-family: Arial;
+      }
+      #map, #map2, #map3, #map4, #map5{
+        float:left;
+        width: 400px;
+        height: 400px;
+       margin: 50px;
+        }
+.t:after {
+content: "";
+display: table;
+clear: both;
+}
+.k{
+  float:left;
+}
+}
+.ui-tabs .ui-tabs-hide {
+display: none;
+}
+.tabs{
+padding:20px;
+}
+
+
+#tabs .ui-tabs-nav,
+#tabs1 .ui-tabs-nav, #tabs2 .ui-tabs-nav, #tabs3 .ui-tabs-nav, #tabs4 .ui-tabs-nav {
+margin: 0;
+padding: 0 0 0 0.5em;
+overflow: hidden;
+}
+
+#tabs .ui-tabs-nav li, #tabs1 .ui-tabs-nav li, #tabs2 .ui-tabs-nav li, #tabs3 .ui-tabs-nav li, #tabs4 .ui-tabs-nav li {
+float: left;
+list-style-type: none;
+background: black;
+margin: 0 0.5em 0 0;
+padding: 0.25em 1em;
+color:black;
+}
+
+#tabs .ui-tabs-nav li.ui-tabs-selected, #tabs1 .ui-tabs-nav li.ui-tabs-selected, #tabs2 .ui-tabs-nav li.ui-tabs-selected,#tabs3 .ui-tabs-nav li.ui-tabs-selected, #tabs4 .ui-tabs-nav li.ui-tabs-selected {
+background: black;
+}
+li{
+color:black;
+}
+#tabs .ui-tabs-nav a, #tabs1 .ui-tabs-nav a, #tabs2 .ui-tabs-nav a, #tabs3 .ui-tabs-nav a, #tabs4 .ui-tabs-nav a {
+text-decoration: none;
+font-size: 0.7em;
+}
+
+#tabs .ui-tabs-panel, #tabs1 .ui-tabs-panel, #tabs2 .ui-tabs-panel, #tabs3 .ui-tabs-panel, #tabs4 .ui-tabs-panel {
+background: #e3e3e3;
+padding: 0.75em 1em;
+}
+
+p{
+color:black;
+}
+.checked {
+color: orange;
+}
+
+.unchecked{
+color:#ECF0F1;
+}
+.l{
+  float:left;
+  width:50%;
+}
+.l:after {
+content: "";
+display: table;
+clear: both;
+}
+.side {
+float: left;
+width: 10%;
+margin-top:2px;
+}
+
+.star {
+margin-top:2px;
+float: left;
+width: 15%;
+}
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.rank{
+float: left;
+width: 20%;
+margin-top:2px;
+
+}
+h2{
+font-family: arial;
+font-size: 20px;
+}
+
+.con img{
+  width: 45%;
+  height: 40%;
+  margin-left: 27%;
+  margin-bottom: 5px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #5a5240;
+    margin-bottom: 1%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-top: 1%;
+}
+
+.topnav a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.topnav a:hover {
+    color: white;
+    background-color: black;
+}
+
+.topnav a.active {
+    color: white;
+}
+
+  </style>
+
+
+  </head>
+  <body>
+
+    <div class="topnav">
+      <a href="faq.html#faq">F.A.Q</a>
+      <a href="moment.html#moment">Moment</a>
+      <a href="article.html#article">Article</a>
+      <a href="itinerary.html#itinerary">Itinerary</a>
+      <a class="active" href="hotel.html#hotel">Hotel</a>
+      <a href="food.html#food">Food</a>
+      <a href="destination.html#destination">Destination</a>
+      <a href="index.html#home">Home</a>
+      </div>
+      <h1 >Sabah</h1>
+    <h4>1.The Palace Hotel Kota Kinabalu</h4>
+
+    <div class="t">
+      <div class="con">
+        <img src="https://d1nabgopwop1kh.cloudfront.net/hotel-asset/30000001000434876_wh_39" alt="">
+      </div>
+
+
+  </div>
+
+<section class="container-content" >
+<div id="tabs">
+<ul>
+<li><a href="#tabs-1">Info</a></li>
+<li><a href="#tabs-2">Address</a></li>
+<li><a href="#tabs-3">Room</a></li>
+<li><a href="#tabs-4">Facilities</a></li>
+  <li><a href="#tabs-5">Nearby Attractions</a></li>
+  <li><a href="#tabs-6">Review</a></li>
+</ul>
+<div id="tabs-1">
+<p>The Palace Hotel Kota Kinabalu has been classified and awarded a 3-Leaf rating from the Green Hotel Classification Program as a Green Hotel that has taken significant steps to protect the environment. The Palace Hotel Kota Kinabalu is a modern, smoke-free, exquisitely designed accommodation standing on a hill, overlooking the hustle and bustle of the city on one side and serene mountains on the other. The Palace Hotel Kota Kinabalu is situated in the center of Kota Kinabalu, Sabah, and close to the state Royal Palace, shopping complex, 15 minutes from the international airport, and 10 minutes to the jetty. This colonial-styled hotel, located in the state of Sabah, is placed on a regal hill looking down upon Kota Kinabalu. Guests will find a variety of amazing natural recreation venues close by, such as nature treks and other outdoor adventures. The hotel itself maintains a majestic royal style that has colonial influences infused with an injection of Malaysian design concepts, creating an atmosphere that is unique and restive. The on-site dining options, Tangerine Restaurant and Glamorous Lounge, serve a multinational compilation of international cuisine as well as refreshing beverages. Whatever the reason for your stay, The Palace Hotel Kota Kinabalu will make your stay a good one.
+Show less </p>
+</div>
+<div id="tabs-2">
+<p>No 1 Jalan Tangki, Karamunsing, , Kota Kinabalu City Centre, Kota Kinabalu, Sabah, Malaysia, 88100.</p>
+</div>
+<div id="tabs-3">
+<ul>
+<li>Deluxe
+</li>
+<li>Standard No Window</li>
+<li>
+Superior Twin</li>
+<li>
+Superior With Wifi
+</li>
+<li>Superior King</li>
+<li>Twin/Double Room</li>
+<li>DELUXE+BENEFIT</li>
+<li>Standard (Windowless)</li>
+<li>Twin Standard-without Window
+</li>
+<li>Basic Double</li>
+
+</ul>
+</div>
+<div id="tabs-4">
+<li>Air Conditioning </li>
+<li>Parking</li>
+<li>24-Hour Front Desk</li>
+<li>Elevator</li>
+<li>Restaurant</li>
+<li>Wifi</li>
+<li>Swimming Pool</li>
+</div>
+<div id="tabs-5">
+<ul>
+<li>Centre Point Sabah(0.67 km)
+</li>
+<li>KK City Waterfront(0.95 km)</li>
+<li>
+Filipino Market ( Handicraft Market )(1.04 km)</li>
+<li>
+Atkinson Clock Tower(1.05 km)
+</li>
+</ul>
+</div>
+<div id="tabs-6">
+<p>"Friendly staff and spacious room, the breakfast are good. Hotel is clean and quiet, surrounding by a lot of tree. Location is good for the traveler with the car, ample parking space.  The breakfast are good, a lot of choice."</p>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<h6 class="hotel link"><a href="https://www.agoda.com/the-palace-hotel-kota-kinabalu/hotel/kota-kinabalu-my.html?cid=-218 "target="_blank">CHECK ROOM PRICE HERE</a></h6>
+
+
+<hr>
+<div id="map"  style='width:90%' style='height: 10%'></div>
+<script src="js/google-map.js"></script>
+<hr>
+<br>
+<div class="row">
+<div class="side">
+<div>Price</div>
+</div>
+<div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+</div>
+<p>4.5/5</p>
+</div>
+<h2></h2>
+<div class="row">
+<div class="side">
+<div>Location</div>
+</div>
+<div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+</div>
+<p>4.5/5</p>
+</div>
+
+
+<h2></h2>
+<div class="row">
+<div class="side">
+<div>Facilities</div>
+</div>
+<div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+</div>
+<p>4.5/5</p>
+</div>
+
+<h2></h2>
+<div class="row">
+<div class="side">
+<div>Cleanliness</div>
+</div>
+<div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+</div>
+<p>4.5/5</p>
+</div>
+
+<h2></h2>
+<div class="row">
+<div class="side">
+<div>Service</div>
+</div>
+<div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+</div>
+<p>4.5/5</p>
+</div>
+ <br><br>
+<hr>
+</section >
+<h4>2.Mandarin Hotel Kota Kinabalu</h4>
+
+<div class="con">
+  <img src="https://pix10.agoda.net/hotelImages/299/299112/299112_15072811100033157861.jpg?s=1024x768" alt="">
+</div>
+
+<section class="container-content" >
+ <div id="tabs1">
+<ul>
+ <li><a href="#tabs-1">Info</a></li>
+ <li><a href="#tabs-2">Address</a></li>
+ <li><a href="#tabs-3">Room</a></li>
+ <li><a href="#tabs-4">Facilities</a></li>
+  <li><a href="#tabs-5">Nearby Attractions</a></li>
+  <li><a href="#tabs-6">Review</a></li>
+</ul>
+<div id="tabs-1">
+ <p>
+Ideal for fun and relaxation, Mandarin Hotel is located in the Central Business District area of Kota Kinabalu. From here, guests can enjoy easy access to all that the lively city has to offer. With the city's main attractions such as Dataran Desoka, Gaya Street Sunday Market, Atkinson Clock Tower within close reach, visitors to the hotel will just love its location. At Mandarin Hotel, the excellent service and superior facilities make for an unforgettable stay. Top features of the hotel include free Wi-Fi in all rooms, daily housekeeping, 24-hour front desk, luggage storage, room service. In addition, all guestrooms feature a variety of comforts. Many rooms even provide television LCD/plasma screen, linens, mirror, towels, internet access – wireless to please the most discerning guest. Besides, the hotel's host of recreational offerings ensures you have plenty to do during your stay. Whatever your purpose of visit, Mandarin Hotel is an excellent choice for your stay in Kota Kinabalu.
+</p>
+</div>
+<div id="tabs-2">
+ <p>Lot 136 & 138, Jalan Gaya Street, Kota Kinabalu City Centre, Kota Kinabalu, Sabah, Malaysia, 88000.</p>
+</div>
+<div id="tabs-3">
+<ul>
+   <li>Family Room
+   </li>
+   <li>Standard Single Room</li>
+   <li>
+   Junior Suite</li>
+   <li>
+  Deluxe Single Room
+   </li>
+   <li>Deluxe No Window</li>
+   <li>Superior Room With Window</li>
+   <li>Superior Room No Window</li>
+   <li>Standard Deluxe Room</li>
+   <li>Double Room</li>
+   <li>standard superior</li>
+</ul>
+</div>
+<div id="tabs-4">
+<ul>
+  <li>Air Conditioning</li>
+  <li>Parking</li>
+  <li>24-Hour Front Desk</li>
+  <li>Elevator</li>
+  <li>Wifi</li>
+</ul>
+</div>
+<div id="tabs-5">
+<ul>
+ <li>Gaya Street Sunday Market(0.11 km)
+</li>
+<li>Atkinson Clock Tower(0.14 km)</li>
+<li>
+Milimewa Superstore(0.15 km)</li>
+<li>
+KK Plaza(0.27 km)
+</li>
+</ul>
+</div>
+<div id="tabs-6">
+ <p>"Mandarin hotel is located in the Gaya street where the Gaya Street Sunday Market is directly outside the hotel. Staffs are attentive and helpful. The rooms are very clean and spacious. Best is that they even provide free transport to the airport now. The hotel so convenient near to the nice cafe shop"</p>
+</div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<h6 class="hotel link"><a href="https://www.agoda.com/mandarin-hotel/hotel/kota-kinabalu-my.html?cid=-218 "target="_blank">CHECK ROOM PRICE HERE</a></h6>
+<hr>
+<div id="map2"  style='width:90%' style='height: 10%'></div>
+<script2 src="js/google-map.js"></script2>
+<hr>
+<br>
+<div class="row">
+
+<div class="side">
+  <div>Price</div>
+</div>
+<div class="star">
+
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked "></span>
+</div>
+<p>4/5</p>
+</div>
+
+<h2></h2>
+<div class="row">
+<div class="side">
+  <div>Location</div>
+</div>
+<div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+</div>
+<p>5/5</p>
+</div>
+
+
+<h2></h2>
+<div class="row">
+<div class="side">
+  <div>Facilities</div>
+</div>
+<div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+</div>
+<p>5/5</p>
+</div>
+
+<h2></h2>
+<div class="row">
+<div class="side">
+  <div>Cleanliness</div>
+</div>
+<div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+</div>
+<p>5/5</p>
+</div>
+
+<h2></h2>
+<div class="row">
+<div class="side">
+  <div>Service</div>
+</div>
+<div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+</div>
+<p>5/5</p>
+</div>
+<br><br>
+<hr>
+</section >
+<h4>3.TH Hotel Kota Kinabalu</h4>
+<div class="con">
+<img src="https://images.trvl-media.com/hotels/8000000/7510000/7509100/7509040/6585f55d_z.jpg" alt="">
+</div>
+<section class="container-content" >
+
+ <div id="tabs2">
+<ul>
+ <li><a href="#tabs-1">Info</a></li>
+ <li><a href="#tabs-2">Address</a></li>
+ <li><a href="#tabs-3">Room</a></li>
+ <li><a href="#tabs-4">Facilities</a></li>
+  <li><a href="#tabs-5">Nearby Attractions</a></li>
+  <li><a href="#tabs-6">Review</a></li>
+
+</ul>
+<div id="tabs-1">
+ <p>
+Ideal for fun and relaxation, TH Hotel - Kota Kinabalu is located in the Central Business District area of Kota Kinabalu. From here, guests can enjoy easy access to all that the lively city has to offer. Also within easy reach are Science & Technology Centre, Sabah Art Gallery, Sabah State Museum. TH Hotel - Kota Kinabalu also offers many facilities to enrich your stay in Kota Kinabalu. A selection of top-class facilities such as free Wi-Fi in all rooms, 24-hour security, convenience store, daily housekeeping, 24-hour front desk can be enjoyed at the hotel. Experience high quality room facilities during your stay here. Some rooms include television LCD/plasma screen, internet access – wireless (complimentary), non smoking rooms, air conditioning, desk, provided to help guests recharge after a long day. The hotel's fitness center are ideal places to relax and unwind after a busy day. TH Hotel - Kota Kinabalu is an ideal place of stay for travelers seeking charm, comfort and convenience in Kota Kinabalu.
+</p>
+</div>
+<div id="tabs-2">
+ <p>Jalan Sembulan, Peti Surat 12908,, Kota Kinabalu City Centre, Kota Kinabalu, Sabah, Malaysia, 88832.</p>
+</div>
+<div id="tabs-3">
+<ul>
+ <li>Executive Suite
+</li>
+<li>Standard Triple</li>
+<li>
+Deluxe King</li>
+<li>
+Deluxe Family
+</li>
+<li>Triple Hot Deal</li>
+<li>Superior Twin</li>
+<li>Superior - Min. 2 nights</li>
+<li>Deluxe Double</li>
+<li>Standard Family</li>
+<li>Double room - De Luxe</li>
+</ul>
+</div>
+<div id="tabs-4">
+ <li>Air Conditioning </li>
+ <li>Parking</li>
+ <li>24-Hour Front Desk</li>
+ <li>Elevator</li>
+ <li>Restaurant</li>
+ <li>Wifi</li>
+
+</div>
+<div id="tabs-5">
+<ul>
+ <li>Sabah State Museum(0.55 km)
+</li>
+<li>Gleneagles Kota Kinabalu(0.62 km)</li>
+<li>
+IMAGO Shopping Mall(0.73 km)</li>
+<li>
+Hospital Queen Elizabeth(1.00 km)
+</li>
+</ul>
+</div>
+<div id="tabs-6">
+ <p>"Located in a strategic place in the heart of Sabah, this Hotel is a recommended place to stay. The cleanliness is good and facilities is well preserved. Although there were no nearby food stalls or restaurants, the cafe opens till evening so we had our dinner there. Food tastes good and price reasonable."</p>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<h6 class="hotel link"><a href="https://www.agoda.com/th-hotel-kota-kinabalu/hotel/kota-kinabalu-my.html?cid=-218 "target="_blank">CHECK ROOM PRICE HERE</a></h6>
+<hr>
+<div id="map3"  style='width:90%' style='height: 10%'></div>
+<script3 src="js/google-map.js"></script3>
+<hr>
+<br>
+<div class="row">
+<div class="side">
+  <div>Price</div>
+</div>
+<div class="star">
+
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+</div>
+<p>4.5/5</p>
+</div>
+
+<h2></h2>
+<div class="row">
+<div class="side">
+  <div>Location</div>
+</div>
+<div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+</div>
+<p>4.5/5</p>
+</div>
+
+
+<h2></h2>
+<div class="row">
+<div class="side">
+  <div>Facilities</div>
+</div>
+<div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+</div>
+<p>4.5/5</p>
+</div>
+
+<h2></h2>
+<div class="row">
+<div class="side">
+  <div>Cleanliness</div>
+</div>
+<div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+</div>
+<p>4.5/5</p>
+</div>
+
+<h2></h2>
+<div class="row">
+<div class="side">
+  <div>Service</div>
+</div>
+<div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+</div>
+<p>4.5/5</p>
+</div>
+<br><br>
+<hr>
+</section >
+<h4>4.Kinabalu Pine Resort</h4>
+<div class="con">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/04/2d/d8/4d/misty-view.jpg" alt="">
+</div>
+
+<section class="container-content" >
+ <div id="tabs3">
+<ul>
+ <li><a href="#tabs-1">Info</a></li>
+ <li><a href="#tabs-2">Address</a></li>
+ <li><a href="#tabs-3">Room</a></li>
+ <li><a href="#tabs-4">Facilities</a></li>
+  <li><a href="#tabs-5">Nearby Attractions</a></li>
+  <li><a href="#tabs-6">Review</a></li>
+</ul>
+<div id="tabs-1">
+ <p>
+Offering quality accommodations in the family fun, sightseeing, romance district of Kinabalu National Park, Kinabalu Pine Resort is a popular pick for both business and leisure travelers. The city center is merely 90. Km away and the airport can be reached within 120 minutes. With its convenient location, the hotel offers easy access to the city's must-see destinations. Offering hotel guests superior services and a broad range of amenities, Kinabalu Pine Resort is committed to ensuring that your stay is as comfortable as possible. While lodging at this wonderful property, guests can enjoy free Wi-Fi in all rooms, 24-hour security, convenience store, daily housekeeping, gift/souvenir shop. The ambiance of Kinabalu Pine Resort is reflected in every guestroom. internet access – wireless (complimentary), desk, balcony/terrace, fan, television are just some of the facilities that can be found throughout the property. The hotel's recreational facilities, which include dart board, children's playground, garden, karaoke are designed for escape and relaxation. When you are looking for comfortable and convenient accommodations in Kinabalu National Park, make Kinabalu Pine Resort your home away from home.
+</p>
+</div>
+<div id="tabs-2">
+ <p>Kampung Kundasang, (Along Kundasang Ranau Highway), Kundasang, Kinabalu National Park, Sabah, Malaysia.</p>
+</div>
+<div id="tabs-3">
+<ul>
+<li>Deluxe</li>
+<li>Superior Deluxe</li>
+<li>Superior Standard</li>
+<li>Standard</li>
+<li>Deluxe Room</li>
+<li>Room</li>
+</ul>
+</div>
+<div id="tabs-4">
+ <li>Air Conditioning </li>
+ <li>Parking</li>
+ <li>24-Hour Front Desk</li>
+ <li>Wifi</li>
+</div>
+<div id="tabs-5">
+<ul>
+ <li>Kundasang War Memorial(0.73 km)
+</li>
+<li>Desa Cattle Dairy Farm(3.94 km)</li>
+<li>
+Kinabalu Park(5.38 km)</li>
+<li>
+Crocker Range National Park(6.58 km)
+</li>
+</ul>
+</div>
+<div id="tabs-6">
+ <p>"The place was well located with very nice view to Kinabalu mountain. In the morning of nice weather can see the mountain very clear. Another is the Pine Restaurant that the staff and food was nice. The food was delicious & the price was quite reasonable."</p>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<h6 class="hotel link"><a href="https://www.agoda.com/kinabalu-pine-resort/hotel/kinabalu-national-park-my.html?cid=-218 "target="_blank">CHECK ROOM PRICE HERE</a></h6>
+<hr>
+
+<div id="map4"  style='width:90%' style='height: 10%'></div>
+<script4 src="js/google-map.js"></script4>
+
+<hr>
+<br>
+<div class="row">
+<div class="side">
+  <div>Price</div>
+</div>
+<div class="star">
+
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+</div>
+<p>4.5/5</p>
+</div>
+
+<h2></h2>
+<div class="row">
+<div class="side">
+  <div>Location</div>
+</div>
+<div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+</div>
+<p>5/5</p>
+</div>
+
+
+<h2></h2>
+<div class="row">
+<div class="side">
+  <div>Facilities</div>
+</div>
+<div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+</div>
+<p>4.5/5</p>
+</div>
+
+<h2></h2>
+<div class="row">
+<div class="side">
+  <div>Cleanliness</div>
+</div>
+<div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked "></span>
+</div>
+<p>4.5/5</p>
+</div>
+
+<h2></h2>
+<div class="row">
+<div class="side">
+  <div>Service</div>
+</div>
+<div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked "></span>
+</div>
+<p>4.5/5</p>
+</div>
+<br><br>
+<hr>
+</section >
+<h4>5.Perkasa Hotel Mt Kinabalu
+</h4>
+
+<div class="con">
+<img src="https://t-ec.bstatic.com/images/hotel/max1024x768/147/147519040.jpg" alt="">
+
+</div>
+<section class="container-content" >
+<div id="tabs4">
+<ul>
+<li><a href="#tabs-1">Info</a></li>
+<li><a href="#tabs-2">Address</a></li>
+<li><a href="#tabs-3">Room</a></li>
+<li><a href="#tabs-4">Facilities</a></li>
+<li><a href="#tabs-5">Nearby Attractions</a></li>
+<li><a href="#tabs-6">Review</a></li>
+</ul>
+<div id="tabs-1">
+<p>Capture the commanding view of the majestic Mount Kinabalu, Perkasa Hotel Mt Kinabalu is located atop a hill, dominating Malaysia’s First World Heritage Site, the Kinabalu National Park. All the 98 rooms at this property feature superior amenities, creating a perfect base for you to enjoy the panoramic views of Mount Kinabalu. For leisure, stroll around the foot hills which are surrounded with vegetable farms and the natural cool atmosphere. Within easy reach, you can visit Kinabalu Parks, the Poring Hot Spring, a beautiful golf course, flora and fauna, and many more. Perkasa Hotel Mt Kinabalu is a great place of stay that is awaiting your visit.
+</p>
+</div>
+<div id="tabs-2">
+<p>W.D.T. 11, Ranau, Kundasang, Kinabalu National Park, Sabah, Malaysia, 89309.</p>
+</div>
+<div id="tabs-3">
+<ul>
+<li>Chalet
+</li>
+<li>Superior</li>
+<li>
+Standard Suite</li>
+</ul>
+</div>
+<div id="tabs-4">
+<li>Parking</li>
+<li>Wifi</li>
+<li>24-Hour Front Desk</li>
+<li>Restaurant</li>
+</div>
+<div id="tabs-5">
+<ul>
+<li>Kundasang War Memorial(1.25 km)
+</li>
+<li>Desa Cattle Dairy Farm(4.54 km)</li>
+<li>Kinabalu Park(5.69 km)
+</li>
+<li>
+Crocker Range National Park(7.07 km)
+</li>
+</ul>
+</div>
+<div id="tabs-6">
+<p>"The location is very good and easy to get there,we can park our car just infront of the hotel room, the surrounding is very green, tranquil and quiet. The staffs are attentive and friendly."</p>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<h6 class="hotel link"><a href="https://www.agoda.com/perkasa-hotel-mt-kinabalu/hotel/kinabalu-national-park-my.html?cid=-218"target="_blank">CHECK ROOM PRICE HERE</a></h6>
+<hr>
+
+<div id="map5"  style='width:90%' style='height: 10%'></div>
+<script5 src="js/google-map.js"></script5>
+
+<hr>
+<br>
+<div class="row">
+<div class="side">
+<div>Price</div>
+</div>
+<div class="star">
+
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked "></span>
+</div>
+<p>4.5/5</p>
+</div>
+
+<h2></h2>
+<div class="row">
+<div class="side">
+<div>Location</div>
+</div>
+<div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o checked"></span>
+</div>
+<p>4.5/5</p>
+</div>
+
+
+<h2></h2>
+<div class="row">
+<div class="side">
+<div>Facilities</div>
+</div>
+<div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star unchecked"></span>
+</div>
+<p>4/5</p>
+</div>
+
+<h2></h2>
+<div class="row">
+<div class="side">
+<div>Cleanliness</div>
+</div>
+<div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star unchecked"></span>
+</div>
+<p>4/5</p>
+</div>
+
+<h2></h2>
+<div class="row">
+<div class="side">
+<div>Service</div>
+</div>
+<div class="star">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star unchecked"></span>
+</div>
+<p>4/5</p>
+</div>
+</section>
+
+<div class="foot">
+  <hr>
+  <div class="footer">
+    <h3>Copyright © 2018, MYTour. All Rights Reserved.</h3>
+    <h3>International Islamic University Malaysia - Gombak</h3>
+  </div>
+</div>
+</body>
+</html>

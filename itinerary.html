@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>MYTour-Itinerary</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <style media="screen">
 
       .container{
@@ -13,7 +14,7 @@
 
       .topnav {
           overflow: hidden;
-          background-color: #d3c6c1;
+          background-color: #5a5240;
           margin-bottom: 1%;
           margin-left: 0%;
           margin-right: 0%;
@@ -31,7 +32,8 @@
       }
 
       .topnav a:hover {
-          text-decoration: line-through;
+          color: white;
+          background-color: black;
       }
 
       .topnav a.active {
@@ -67,7 +69,7 @@
 
       p{
         font-weight: bold;
-        font-family: fantasy;
+        font-family: 'Dancing Script', cursive;
         position: center;
         font-size: 50px;
      }
@@ -83,12 +85,34 @@
         display:block;
         padding:10px;
         border:1px solid black;
+        position: middle;
+        width: 50%;
+        margin-left: 25%;
       }
 
       h2:hover{
-          background-color: black;
+        border:1px solid #8c6767;
+          background-color: #8c6767;
           color: white;
       }
+
+      .footer {
+        position: absolute;
+        right: 0;
+        margin-top: 0%;
+        left: 0;
+        text-align: center;
+        background-color: #5a5240;
+        padding: 30px;
+        color: white;
+        font-size: 12px;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      hr{
+        border: 4px solid #898c9b;
+      }
+
 
     </style>
 
@@ -119,5 +143,11 @@
             <img src="Kota-Kinabalu.jpg">
             <h2 onclick="location.href='kkitnry.html#kotankundasang'">Read More</h2>
             <br>
+
+            <hr>
+            <div class="footer">
+              <h3>Copyright © 2018, MYTour. All Rights Reserved.</h3>
+              <h3>International Islamic University Malaysia - Gombak</h3>
+            </div>
   </body>
 </html>

@@ -5,6 +5,7 @@
     <title>MYTour-Moment</title>
     <link href="https://fonts.googleapis.com/css?family=Spinnaker" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 
     <style media="screen">
     body{
@@ -19,7 +20,7 @@
   .topnav {
     display: block;
       overflow: hidden;
-      background-color: #d3c6c1;
+      background-color: #5a5240;
       margin-bottom: 1%;
       margin-left: 0%;
       margin-right: 0%;
@@ -38,7 +39,8 @@
   }
 
   .topnav a:hover {
-      text-decoration: line-through;
+      color: white;
+      background-color: black;
   }
 
   .topnav a.active {
@@ -47,13 +49,15 @@
 
   .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #D3D3D3;
+    border: 1px solid none;
+    background-color: #3d2d2d;
+
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
-    background-color: #C0C0C0;
+    color: white;
+    background-color:#3d2d2d;
     float: left;
     border: none;
     outline: none;
@@ -64,30 +68,46 @@
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #ddd;
+    background-color: #8c6767;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ccc;
+    background-color: #8c6767;
 }
 
 /* Style the tab content */
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
+    border: 1px solid none;
     border-top: none;
-    
+
 }
 
 p{
   font-weight: bold;
-  font-family: fantasy;
+  font-family: 'Dancing Script', cursive;
   text-align: center;
   font-size: 50px;
 }
 
+.footer {
+  position: absolute;
+  right: 0.7%;
+  margin-top: 0%;
+  left: 0.7%;
+  text-align: center;
+  background-color: #5a5240;
+  padding: 30px;
+  color: white;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+hr{
+  border: 4px solid #898c9b;
+}
   </style>
   </head>
 
@@ -115,7 +135,7 @@ p{
 
 <div id="Singapore" class="tabcontent">
   <h1>Singapore</h1>
-  <h2 onclick="location.href='https://www.instagram.com/_mustaqimah'">@Mustaqimah</h2>
+  <h2 onclick="location.href='https://www.instagram.com/p/Bpd-9gOAMVv/'">@Mustaqimah</h2>
   <img src="singaporeflyer.jpg" alt="singaporeflyer" width="750px" height="400px" left="50%">
   <img src="orange.jpg" alt="orange" width="450px" height="400px" align="right">
 </div>
@@ -130,8 +150,8 @@ p{
 <div id="Langkawi" class="tabcontent">
   <h1>Langkawi</h1>
   <h2>@Mandy</h2>
-  <img src="eagle.jpg" alt="afamosa" width="600px" height="400px" left="50%">
-  <img src="skybridge.jpg" alt="tamingsari" width="600px" height="400px" align="right">
+  <img src="eagle.jpg" alt="lang" width="600px" height="400px" left="50%">
+  <img src="skybridge.jpg" alt="bridge" width="600px" height="400px" align="right">
 </div>
 
 <div id="Penang" class="tabcontent">
@@ -142,6 +162,12 @@ p{
 </div>
 
 <p>Moment shared by the reader.</p>
+
+<hr>
+<div class="footer">
+  <h3>Copyright © 2018, MYTour. All Rights Reserved.</h3>
+  <h3>International Islamic University Malaysia - Gombak</h3>
+</div>
 <script>
 function openCity(evt, cityName) {
 
