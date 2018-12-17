@@ -2,13 +2,34 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <style>
+
+h2{
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 50px;
+}
+
+img{
+  height: 55%;
+  width: 25%;
+  margin-right: 20px;
+
+}
+
+iframe{
+   width: 400px;
+   height: 200px;
+   margin-bottom: 20px;
+   margin-top: 20px;
+   margin-left: 20px;
+   margin-right: 20px;
+ }
 
 body {
   font-family: Arial;
-  background-image: url("almonds-berries-blackberries-1099680.jpg");
+  background-image: url("");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -16,10 +37,19 @@ body {
   background-color: #fef2da;
 }
 
+.section {
+  width: 950px;
+  margin: 0 auto;
+  padding: 20px 0;
+  overflow: hidden;
+  text-align: center;
+}
+
 .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #800000;
+    border: 1px solid none;
+    background-color: #3d2d2d;
+
 }
 
 .tab button {
@@ -30,17 +60,17 @@ body {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    font-size: 25px;
-    font-weight: bold;
-    font-family: fantasy;
+    font-size: 18px;
+
+    color: white;
 }
 
 .tab button:hover {
-    background-color: #ffd5d5;
+    background-color: #8c6767;
 }
 
 .tab button.active {
-    background-color: #ccc;
+    background-color: #8c6767;
 }
 
 .tabcontent {
@@ -48,16 +78,16 @@ body {
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
-    background-color: #8c6767;
+    background-color: #f7f7f7;
 }
 
 .topnav {
     overflow: hidden;
-    background-color: #d3c6c1;
+    background-color: #5a5240;
     margin-bottom: 1%;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-top: 0%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-top: 0.5%;
 }
 
 .topnav a {
@@ -66,87 +96,311 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 13px;
     font-family: 'Montserrat', sans-serif;
 }
 
 .topnav a:hover {
-    text-decoration: line-through;
+    color: white;
+    background-color: black;
 }
 
 .topnav a.active {
     color: white;
+    background-color: #5a5240;
+}
+
+.footer {
+  position: absolute;
+  right: 0.7%;
+  margin-top: 0%;
+  left: 0.7%;
+  background-color: #5a5240;
+  padding: 30px;
+  color: white;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+}
+h3{
+  text-align: center;
+}
+
+hr{
+  border: 4px solid #898c9b;
+  margin-left: 0.7%;
+  margin-right: 0.7%;
 }
 </style>
-<title>MYTour-Food</title>
+<title>Food</title>
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 </head>
 <body>
 
-  <div class="container">
+  <div class="topnav">
+    <a href="faq.html#faq">F.A.Q</a>
+    <a href="moment.html#moment">Moment</a>
+    <a href="article.html#article">Article</a>
+    <a href="itinerary.html#itinerary">Itinerary</a>
+    <a href="hotel.html#hotel">Hotel</a>
+    <a class="active" href="food.html#food">Food</a>
+    <a href="destination.html#destination">Destination</a>
+    <a href="index.html#home">Home</a>
+    </div>
 
-    <div class="topnav">
-      <a href="faq.html#faq">F.A.Q</a>
-      <a href="moment.html#moment">Moment</a>
-      <a href="article.html#article">Article</a>
-      <a href="itinerary.html#itinerary">Itinerary</a>
-      <a href="hotel.html#hotel">Hotel</a>
-      <a class="active" href="food.html#food">Food</a>
-      <a href="destination.html#destination">Destination</a>
-      <a href="index.html#home">Home</a>
-      </div>
-
-<h2>You should try!</h2>
-<p>Click on the tab to see the yummies menu.</p>
+<h2>You Should Try!</h2>
 
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Johor')">Johor</button>
-  <button class="tablinks" onclick="openCity(event, 'Kedah')">Kedah</button>
   <button class="tablinks" onclick="openCity(event, 'Melaka')">Melaka</button>
-  <button class="tablinks" onclick="openCity(event, 'Sabah')">Sabah</button>
-  <button class="tablinks" onclick="openCity(event, 'Perak')">Perak</button>
+  <button class="tablinks" onclick="openCity(event, 'Negeri Sembilan')">Negeri Sembilan</button>
   <button class="tablinks" onclick="openCity(event, 'Selangor')">Selangor</button>
-  <button class="tablinks" onclick="openCity(event, 'Terengganu')">Terengganu</button>
+  <button class="tablinks" onclick="openCity(event, 'Perak')">Perak</button>
+  <button class="tablinks" onclick="openCity(event, 'Kedah')">Kedah</button>
+  <button class="tablinks" onclick="openCity(event, 'Pulau Pinang')">Pulau Pinang</button>
+  <button class="tablinks" onclick="openCity(event, 'Perlis')">Perlis</button>
   <button class="tablinks" onclick="openCity(event, 'Pahang')">Pahang</button>
+  <button class="tablinks" onclick="openCity(event, 'Terengganu')">Terengganu</button>
+  <button class="tablinks" onclick="openCity(event, 'Kelantan')">Kelantan</button>
+  <button class="tablinks" onclick="openCity(event, 'Sabah')">Sabah</button>
+  <button class="tablinks" onclick="openCity(event, 'Sarawak')">Sarawak</button>
 </div>
 
 <div id="Johor" class="tabcontent">
-  <h3>Johor</h3>
-  <img src="copilot-food-travel-201405-1401310538219_best-food-instagrams-_0001_9.jpg">
+  <br>
+  <h3>Mee Bandung Muar</h3>
+  <img src="mi bandung.jpg">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.2389831838505!2d102.55653181403228!3d2.0603382594564605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d1b8e3e8a7a3c1%3A0x59ff8cf07a8c7346!2sMee+Bandung+Muar!5e0!3m2!1sen!2smy!4v1545058216472"
+  frameborder="0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/Nz8ibzt1Lo8"
+  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <hr><br>
+  <h3>Kacang Pool</h3>
+  <img src="kacang pool.jpg">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.719285436155!2d102.91974991403256!3d1.8586171602490649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d056ca68076ec3%3A0x6531ac13bf461edb!2sKacang+Pool+Haji!5e0!3m2!1sen!2smy!4v1545066115599"
+  frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/2oWQC80hT9k"
+  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <div id="Kedah" class="tabcontent">
-  <h3>Kedah</h3>
-  <img src="Laksa-Kedah.jpg">
+  <br>
+  <h3>Apam Lenggang</h3>
+  <img src="apam lenggang.jpg">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15868.114300561554!2d100.34748856520967!3d6.126857014259286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304b435116307e73%3A0x1ea75fc1d895b796!2sApom+Lenggang+Anggerik!5e0!3m2!1sen!2smy!4v1545067755101"
+  frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/ib0bVfJhBeY"
+  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <hr><br>
+   <h3>Gulai Batang Pisang</h3>
+  <img src="gulai batang pisang.jpg">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.50317448372!2d99.82484181403565!3d6.328784627153895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304c7f44485b8c13%3A0x53428e4e07327d7f!2sJem&#39;s+Gulai+Batang+Pisang!5e0!3m2!1sen!2smy!4v1545067816749"
+  frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 
 <div id="Melaka" class="tabcontent">
-  <h3>Melaka</h3>
+  <br>
+  <h3>Chicken Rice Ball</h3>
   <img src="chicken-rice-ball.jpg">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.890977714493!2d102.24645631403214!3d2.1949488588906028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d1f1dc2c2b6abd%3A0xa74963a65c1fc5e0!2sChicken+Rice+Ball%2C+75200+Melaka!5e0!3m2!1sen!2smy!4v1545066464904"
+  frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/hhWR5KMxpN8"
+  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <hr><br>
+  <h3>Cencaluk</h3>
+  <img src="cencaluk.jpg">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15947.28489645883!2d102.15588768073754!3d2.22094909163383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d1f0dcaca943d5%3A0xba68cd87323c712c!2sKedai+Belacan+Cincaluk+Seri+Murni!5e0!3m2!1sen!2smy!4v1545066631980"
+  frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/ISISw5Yj_L8"
+  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <hr><br>
+  <h3>Asam Pedas</h3>
+  <img src="asam pedas.jpg">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15947.28489645883!2d102.15588768073754!3d2.22094909163383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d1f0dcaca943d5%3A0xba68cd87323c712c!2sKedai+Belacan+Cincaluk+Seri+Murni!5e0!3m2!1sen!2smy!4v1545066631980"
+  frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/zWTnhcWYk4U?start=26"
+  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <div id="Sabah" class="tabcontent">
-  <h3>Sabah</h3>
-  <img src="cfed.jpg">
+  <br>
+  <h3>Jeruk Bambangan</h3>
+  <img src="jeruk bambangan.jpg">
+  <hr><br>
+  <h3>Ambuyat</h3>
+  <img src="ambuyat.jpg">
+  <hr><br>
+  <h3>Hinava</h3>
+  <img src="hinava.jpg">
 </div>
 
 <div id="Perak" class="tabcontent">
-  <h3>Perak</h3>
-  <img src="12WanThauLong_gregw3602z_flickr.jpg">
+  <br>
+  <h3>Rendang Tok</h3>
+  <img src="rendang tok.jpg">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.814361241022!2d101.12452031403208!3d4.6271853435808135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31caed2524a80dbf%3A0x8b69933e8e87c9bb!2sRestoran+Rendang+Tok!5e0!3m2!1sen!2smy!4v1545067529556"
+  frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/gvmleSvhXvg?start=7"
+  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <hr><br>
+  <h3>Mee Udang Banjir</h3>
+  <img src="mi udang banjir.jpg">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7951.186217578819!2d100.63685622123953!3d4.839712426559669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31caad1a0f6e8701%3A0x696a242860cab9fd!2sMak+Teh+Mee+Banjir+Udang!5e0!3m2!1sen!2smy!4v1545067645664"
+  frameborder="0" style="border:0" allowfullscreen></iframe>
+  <hr><br>
+  <h3>Wan Thau Long</h3>
+  <img src="wan thau long.jpg">
+  <hr><br>
+  <h3>Ayam Taugeh</h3>
+  <img src="ayam taugeh.jpg">
 </div>
 
 <div id="Selangor" class="tabcontent">
-  <h3>Selangor</h3>
-  <img src="roti_canai_IMG_9574.jpg">
+  <br>
+  <h3>Nasi Ambeng</h3>
+  <img src="nasi ambeng.jpg">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.7492654363805!2d101.19469821403129!3d3.4111898524388846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc8db12db22a8d%3A0x5e8764feb05c6b7f!2sWarung+Ibu+Nasi+Ambeng!5e0!3m2!1sen!2smy!4v1545067096330"
+  frameborder="0" style="border:0" allowfullscreen></iframe>
+   <hr><br>
+   <h3>Sate Kajang</h3>
+  <img src="sate kajang.jpg">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254978.51868447865!2d101.56614654996147!3d3.0841718596383636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdcb78060cfb2d%3A0x433012748a7adab5!2sRestoran+Sate+Kajang+Hj+Samuri!5e0!3m2!1sen!2smy!4v1545067463494"
+  frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 
 <div id="Terengganu" class="tabcontent">
-  <h3>Terengganu</h3>
-  <img src="lekor.jpg">
-</div>
+  <br>
+   <h3>Nasi Dagang</h3>
+  <img src="nasi dagang.jpg">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d508378.5351682943!2d102.58673185612572!3d5.461310606621208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b7bb51d82b6409%3A0xcc73a5a891b5fd98!2sDD+Corner+Nasi+DAGANG!5e0!3m2!1sen!2smy!4v1545068380759"
+  frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/8JLltUUEIDM?start=7"
+  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <hr><br>
+ <h3>Ketupat Sotong</h3>
+ <img src="ketupat-sotong.jpg">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.4154944647958!2d103.12772421403322!3d5.353390737144594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b7bdcae2dc676d%3A0xf0a9f52e35e6f441!2sTupat+Sotong!5e0!3m2!1sen!2smy!4v1545068440845"
+ frameborder="0" style="border:0" allowfullscreen></iframe>
+ <iframe src="https://www.youtube.com/embed/vvyJsLK-W5g?start=7"
+ frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <hr><br>
+   <h3>Keropok Lekor</h3>
+  <img src="keropok lekor.jpg">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15889.661285570424!2d103.1211581150236!3d5.353417376366954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b7bc4f4fddd4cd%3A0xd79da6f8add1e75c!2sKeropok+Lekor+519!5e0!3m2!1sen!2smy!4v1545068528861"
+  frameborder="0" style="border:0" allowfullscreen></iframe>
+   <hr><br>
+   <h3>Rojak Kateh</h3>
+   <img src="rojak kateh.jpg">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.5246972805103!2d103.14034751403318!3d5.336555837303477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b7bdd8f4d9f8ff%3A0x8c048bdf270b4eff!2sRojak+Ayam!5e0!3m2!1sen!2smy!4v1545068572813"
+   frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
 
 <div id="Pahang" class="tabcontent">
-  <h3>Pahang</h3>
-  <img src="cb3f.jpg">
+  <br>
+  <h3>Ikan Patin Masak Tempoyak</h3>
+  <img src="patin masak tempoyak.jpg">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1019476.258168806!2d101.96199218260017!3d3.5111255632990517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31ceb82ebfdcd53b%3A0x81421c5f7ca4bdab!2sC&#39;wok+Cafe+Ikan+Patin+Tempoyak!5e0!3m2!1sen!2smy!4v1545068133001"
+  frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/wlxgOiBNyYs"
+  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <hr><br>
+  <h3>Puding Raja</h3>
+ <img src="puding raja.jpg">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254830.15799864428!2d103.22921505026555!3d3.650894977872771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cf5086f8bb67d5%3A0x5e86b5c7da4bdabb!2sPUDING+RAJA+ICAH+CATERING!5e0!3m2!1sen!2smy!4v1545068208468"
+ frameborder="0" style="border:0" allowfullscreen></iframe>
+ <iframe src="https://www.youtube.com/embed/vM9p5tqY9e4"
+ frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <hr><br>
+   <h3>Sambal Hitam</h3>
+  <img src="sambal hitam.jpg">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2038635.8649771404!2d102.24773178351525!3d3.653272310135697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31c962c000000013%3A0xb192096b38040204!2sSAMBAL+HITAM+RESTAURANT!5e0!3m2!1sen!2smy!4v1545068265627"
+  frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
+<div id="Kelantan" class="tabcontent">
+  <br>
+  <h3>Nasi Kerabu</h3>
+  <img src="nasi kerabu.jpg">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507917.43839561625!2d101.82043538229325!3d5.98027935359358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b6b1f844931ec1%3A0x5810f558d2ac7a27!2sJijah&#39;s+Nasi+Kerabu!5e0!3m2!1sen!2smy!4v1545068689405"
+  frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/cBMI5xgklAo"
+  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <hr><br>
+  <h3>Laksam</h3>
+ <img src="laksam.jpg">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507916.3015452934!2d101.82043176988545!3d5.981503430062707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b6beb3602e68bd%3A0x9d3e880297bb167e!2sdin+corner+laksam+special!5e0!3m2!1sen!2smy!4v1545068751737"
+ frameborder="0" style="border:0" allowfullscreen></iframe>
+ <iframe src="https://www.youtube.com/embed/DSlJF7xv7JY"
+ frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <hr><br>
+ <h3>Etok Salai</h3>
+ <img src="etok salai.jpg">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.5266018660027!2d102.38785881403486!3d6.059478630066332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b6b9acfb561eb5%3A0xd533211983d7c994!2sEtok+Salai!5e0!3m2!1sen!2smy!4v1545068798904"
+ frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<div id="Pulau Pinang" class="tabcontent">
+  <br>
+  <h3>Penang Asam Laksa</h3>
+  <img src="penang asam laksa.jpg">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.1025197660942!2d100.27592861403326!3d5.401349636689409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac2176f4bdac1%3A0x89384722d9a4633b!2sPenang+Air+Itam+Laksa!5e0!3m2!1sen!2smy!4v1545067900742"
+  frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/tWIgX13Z1vQ"
+  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <hr><br>
+   <h3>Pasembur</h3>
+  <img src="pasembur.jpg">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63553.63089961315!2d100.24309750381771!3d5.401439422126256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac38f3e7e6231%3A0xa0d273770db8120c!2sKareem+Pasembur+Rojak!5e0!3m2!1sen!2smy!4v1545067975560"
+   frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<div id="Sarawak" class="tabcontent">
+  <br>
+  <h3>Kek Lapis</h3>
+  <img src="Kek-Lapis-Sarawak.jpg">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.066374455461!2d113.98407691403177!3d4.398682545428841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x321f4f33031352ab%3A0xa831911b014d1693!2sKek+Lapis+Sarawak+Siti+Payung!5e0!3m2!1sen!2smy!4v1545068999223"
+  frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/Je_Qpqki84k"
+  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <hr><br>
+  <h3>Laksa Sarawak</h3>
+  <img src="laksa sarawak.jpg">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254953.09349098636!2d101.5058962999086!3d3.1884455156328113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc357d33174ef5%3A0x1dffa6929731ee71!2sDayang+Sarawak+Corner+(Mee+Kolok+%26+Laksa+Sarawak)!5e0!3m2!1sen!2smy!4v1545069071142"
+  frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/4o9GJo30Leg"
+  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <hr><br>
+     <h3>Umai</h3>
+  <img src="Umai.jpg">
+  <iframe src="https://www.youtube.com/embed/_W8lGzQAy80"
+  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <hr><br>
+     <h3>Manok Pansuh</h3>
+  <img src="manok pansuh.jpg">
+  <iframe src="https://www.youtube.com/embed/QPPX7Y8oRCI"
+  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+
+<div id="Perlis" class="tabcontent">
+  <br>
+  <h3>Laksa Perlis</h3>
+  <img src="laksa perlis.jpg">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126873.26488910982!2d100.13489857644049!3d6.421083456247734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304c9bf467bb967f%3A0x277804ed2b4d99d!2sD&#39;+Adna+Laksa+House!5e0!3m2!1sen!2smy!4v1545068042079"
+  frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<div id="Negeri Sembilan" class="tabcontent">
+  <br>
+  <h3>Masak Lemak Cili Api</h3>
+  <img src="masak lemak cili api.jpg">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1020619.6997857298!2d101.67617557879423!3d2.230386500815726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdda6e65a26ea3%3A0xa8f5bd7ff20a71dc!2sDaging+Salai+Negeri+Sembilan!5e0!3m2!1sen!2smy!4v1545067009882"
+  frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/s-SzN9quez4?start=28"
+  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<hr>
+<div class="footer">
+  <h3>Copyright © 2018, MYTour. All Rights Reserved.</h3>
+  <h3>International Islamic University Malaysia - Gombak</h3>
 </div>
 
 <script>
