@@ -1,14 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>HR Langkawi</title>
+    <title>Hotel Review</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/eggplant/jquery-ui.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
         <script>
 
 
@@ -37,56 +35,7 @@
       } );
 
 </script>
-<script type="text/javascript">
-  function init() {
-var mapOptions = { // Set up the map options
-center: new google.maps.LatLng(6.325712, 99.849572),
-mapTypeId: google.maps.MapTypeId.ROADMAP, zoom: 13 };
-var mapOptions2 = { // Set up the map options
-center: new google.maps.LatLng(6.290522, 99.727958),
-mapTypeId: google.maps.MapTypeId.ROADMAP, zoom: 13 };
-var mapOptions3 = { // Set up the map options
-center: new google.maps.LatLng(6.327817, 99.838085),
-mapTypeId: google.maps.MapTypeId.ROADMAP, zoom: 13 };
-var mapOptions4 = { // Set up the map options
-center: new google.maps.LatLng(6.327705, 99.837078),
-mapTypeId: google.maps.MapTypeId.ROADMAP, zoom: 13 };
-var mapOptions5 = { // Set up the map options
-center: new google.maps.LatLng(6.294755, 99.724587),
-mapTypeId: google.maps.MapTypeId.ROADMAP, zoom: 13 };
-var venueMap; // Map() draws a map
-venueMap = new google.maps.Map(document.getElementById('map'), mapOptions);
-var venueMap2; // Map() draws a map
-venueMap2 = new google.maps.Map(document.getElementById('map2'), mapOptions2);
 
-var venueMap3; // Map() draws a map
-venueMap3 = new google.maps.Map(document.getElementById('map3'), mapOptions3);
-
-var venueMap4; // Map() draws a map
-venueMap4 = new google.maps.Map(document.getElementById('map4'), mapOptions4);
-
-var venueMap5; // Map() draws a map
-venueMap5 = new google.maps.Map(document.getElementById('map5'), mapOptions5);
-}
-function loadScript() {
-var script = document.createElement('script'); // Create <script> element
-script.src = 'http://maps.googleapis.com/maps/api/js?sensor=false&callback=init';
-document.body.appendChild(script); // Add element to page
-var script2 = document.createElement('script2'); // Create <script> element
-script.src = 'http://maps.googleapis.com/maps/api/js?sensor=false&callback=init';
-document.body.appendChild(script2); // Add element to page
-var script3 = document.createElement('script3'); // Create <script> element
-script.src = 'http://maps.googleapis.com/maps/api/js?sensor=false&callback=init';
-document.body.appendChild(script3); // Add element to page
-var script4 = document.createElement('script4'); // Create <script> element
-script.src = 'http://maps.googleapis.com/maps/api/js?sensor=false&callback=init';
-document.body.appendChild(script4); // Add element to page
-var script5 = document.createElement('script5'); // Create <script> element
-script.src = 'http://maps.googleapis.com/maps/api/js?sensor=false&callback=init';
-document.body.appendChild(script5); // Add element to page
-}
-window.onload = loadScript; // on load call loadScript()
-</script>
 <style type="text/css">
 body{
   padding: 0;
@@ -103,20 +52,15 @@ body{
 }
 h1{
   color: black;
-  font-size: 50px;
-  text-align: center;
-  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+  margin-left: 13%;
+  font-family: Arial;
 }
 h4{
   margin-left: 13%;
   font-family: Arial;
 }
-#map, #map2, #map3, #map4, #map5{
-  float:left;
-  width: 400px;
-  height: 400px;
- margin: 50px;
-  }
+
 * {
     box-sizing: border-box;
 }
@@ -214,10 +158,10 @@ font-size: 20px;
 .topnav {
     overflow: hidden;
     background-color: #5a5240;
-    margin-bottom: 0%;
+    margin-bottom: 1%;
     margin-left: 0.5%;
     margin-right: 0.5%;
-    margin-top: 1%;
+    margin-top: 0.5%;
 }
 
 .topnav a {
@@ -226,7 +170,7 @@ font-size: 20px;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 13px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -241,31 +185,25 @@ font-size: 20px;
 
 .footer {
   position: absolute;
-  right: 0.75%;
-  margin-top: 0;
-  left: 0.75%;
+  right: 0;
+  margin-top: 0%;
+  left: 0;
   text-align: center;
   background-color: #5a5240;
   padding: 30px;
   color: white;
-
-}
-
-.footer h3{
-  font-size: 90%;
+  font-size: 12px;
   font-family: 'Montserrat', sans-serif;
 }
 
-.foot hr{
-
+hr{
   border: 4px solid #898c9b;
-  margin-left: 0.7%;
-  margin-right: 0.7%;
 }
+
+
   </style>
   </head>
   <body>
-
     <div class="topnav">
       <a href="faq.html#faq">F.A.Q</a>
       <a href="moment.html#moment">Moment</a>
@@ -276,7 +214,6 @@ font-size: 20px;
       <a href="destination.html#destination">Destination</a>
       <a href="index.html#home">Home</a>
       </div>
-
     <h1>Langkawi</h1>
 <div class="desc ">
   When we have a vacation to Langkawi Island, finding budget accommodation and affordable hotels in Langkawi especially around the beach is really easy but not all good. Everyone including myself want to stay at comfortable place and is worth the price even cheap. And usually when traveling here we should look for a affordable hotel near the Langkawi Airport.
@@ -361,8 +298,7 @@ Hill View Suite
 
   <h6 class="comment-name by-author"><a href="https://www.agoda.com/hig-hotel/hotel/langkawi-my.html?cid=-218 "target="_blank">CHECK ROOM PRICE HERE</a></h6>
 <hr>
-<div id="map"  style='width:90%' style='height: 10%'></div>
-<script src="js/google-map.js"></script>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.529906330811!2d99.84743661387532!3d6.325301227192698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304c7f78fb9dc6e3%3A0x7a42d7241ce874ff!2sHIG+Hotel!5e0!3m2!1sen!2smy!4v1545067571489" width="1000" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 <hr>
 <br>
 <div class="row">
@@ -510,8 +446,7 @@ This property ensures guests warm hospitality and great service that also brings
 
   <h6 class="comment-name by-author"><a href="https://www.agoda.com/langgura-baron-resort/hotel/langkawi-my.html?cid=-218 "target="_blank">CHECK ROOM PRICE HERE</a></h6>
   <hr>
-  <div id="map2"  style='width:90%' style='height: 10%'></div>
-  <script2 src="js/google-map.js"></script2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.7980719853517!2d99.7258012138752!3d6.290250527578195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304b87dee5fb9beb%3A0xa9012c2984fe7e36!2sLanggura+Baron+Resort+Langkawi!5e0!3m2!1sen!2smy!4v1545067655338" width="1000" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
   <hr>
   <br>
   <div class="row">
@@ -664,8 +599,7 @@ Deluxe Twin
 
   <h6 class="comment-name by-author"><a href="https://www.agoda.com/hotel-langkasuka/hotel/langkawi-my.html?cid=-218 "target="_blank">CHECK ROOM PRICE HERE</a></h6>
   <hr>
-  <div id="map3"  style='width:90%' style='height: 10%'></div>
-  <script3 src="js/google-map.js"></script3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5134233986278!2d99.83588531387534!3d6.327449327168991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304c7f68474dd159%3A0x82556ff33d1706a6!2sHotel+Langkasuka+Langkawi!5e0!3m2!1sen!2smy!4v1545067702740" width="1000" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
   <hr>
   <br>
   <div class="row">
@@ -814,8 +748,7 @@ This seven-story building of Malay architectural design provides 194 spacious ro
 
   <h6 class="comment-name by-author"><a href="https://www.agoda.com/hotel-langkasuka/hotel/langkawi-my.html?cid=-218 "target="_blank">CHECK ROOM PRICE HERE</a></h6>
   <hr>
-  <div id="map4"  style='width:90%' style='height: 10%'></div>
-  <script4 src="js/google-map.js"></script4>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.513957544975!2d99.83491111387531!3d6.327379727169777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304c7f69ae5123f5%3A0x2dc1ad4b3d2d9f21!2sHotel+Grand+Continental+Langkawi!5e0!3m2!1sen!2smy!4v1545067762530" width="1000" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
   <hr>
   <br>
   <div class="row">
@@ -964,8 +897,7 @@ Cenang Beach(0.09 km)
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <h6 class="comment-name by-author"><a href="https://www.agoda.com/malibest-resort/hotel/langkawi-my.html?cid=-218 "target="_blank">CHECK ROOM PRICE HERE</a></h6>
 <hr>
-<div id="map5"  style='width:90%' style='height: 10%'></div>
-<script5 src="js/google-map.js"></script5>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.766583408737!2d99.72249531387517!3d6.294376327532904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304b87dee66f7747%3A0x42f02ab53bb6aea8!2sMalibest+Resort+Langkawi!5e0!3m2!1sen!2smy!4v1545067801925" width="1000" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 <hr>
 <br>
 <div class="row">
@@ -1044,14 +976,11 @@ Cenang Beach(0.09 km)
 </div>
 <p>4/5</p>
 </div>
-</div>
 </section>
-<div class="foot">
-  <hr>
-  <div class="footer">
-    <h3>Copyright © 2018, MYTour. All Rights Reserved.</h3>
-    <h3>International Islamic University Malaysia - Gombak</h3>
-  </div>
+<hr>
+<div class="footer">
+  <h3>Copyright © 2018, MYTour. All Rights Reserved.</h3>
+  <h3>International Islamic University Malaysia - Gombak</h3>
 </div>
   </body>
 </html>
